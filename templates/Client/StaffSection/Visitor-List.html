@@ -1,0 +1,192 @@
+{% extends "Client/StaffSection/Staff-base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-users"></i> Visitor List</div>
+        
+        </div>
+      </div>
+      <div class="card-body p-0">
+          <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  id="basic-datatables"
+                  class="display table table-striped table-hover table-head-bg-primary"
+                >
+                  <thead>
+                    <tr>
+                      <th>Visitor ID</th>
+                      <th>Name</th>
+                      <th>Register Type</th>
+                      <th>Payment</th>
+                      <th>Option</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Visitor ID</th>
+                      <th>Name</th>
+                      <th>Register Type</th>
+                      <th>Payment</th>
+                      <th>Option</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr class="text-center">
+                      <td>v0001</td>
+                      <td>Tiger Nixon</td>
+                      <td>visitor</td>
+                      <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                      <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applicantinfo">
+                            Update
+                          </button></td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>v0002</td>
+                      <td>Ashton Cox</td>
+                      <td>visitor</td>
+                      <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                      <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applicantinfo">
+                            Update
+                          </button></td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>v0002</td>
+                      <td>Cedric Kelly</td>
+                      <td>visitor</td>
+                      <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                      <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applicantinfo">
+                            Update
+                          </button></td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>v0003</td>
+                      <td>Airi Satou</td>
+                      <td>visitor</td>
+                      <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                      <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applicantinfo">
+                            Update
+                          </button></td>
+                    </tr>
+         
+                    <tr class="text-center">
+                      <td>v0003</td>
+                      <td>Dai Rios</td>
+                      <td>visitor</td>
+                      <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                      <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applicantinfo">
+                            Update
+                          </button></td>
+                    </tr>
+                
+                    <tr class="text-center">
+                      <td>v0004</td>
+                      <td>Jenette Caldwell</td>
+                      <td>visitor</td>
+                      <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                      <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applicantinfo">
+                            Update
+                          </button></td>
+                    </tr>
+                    <tr class="text-center">
+                      <td>v0005</td>
+                      <td>Yuri Berry</td>
+                      <td>visitor</td>
+                      <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                      <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applicantinfo">
+                            Update
+                          </button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade " id="applicantinfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Visitor Info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 mt-2 mb-2">
+                <ul>
+                    <li>Name: </li>
+                    <li>Phone: </li>
+                    <li>Fax: </li>
+                </ul>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+                <ul>
+                    <li>Select Research Field: </li>
+                    <li>Institution: </li>
+                    <li>Address: </li>
+                </ul>
+            </div>
+            <div class="col-md-12 mt-2 mb-2">
+                <p style="font-weight: bold;">Payment Status</p>
+                <table class="table table-striped mt-3 table-head-bg-black">
+                    <thead>
+                      <tr>
+                        <th scope="col">Register Type</th>
+                        <th scope="col">Amount Paid</th>
+                        <th scope="col">Ref no.</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Transaction Time</th>
+                        <th scope="col">Slip</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>regular</td>
+                        <td>฿ 14,000</td>
+                        <td>N00012</td>
+                        <td>2024/03/04</td>
+                        <td>23:00</td>
+                        <td><button class="btn btn-info">Download</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-12 mt-2 mb-2">
+                <p style="font-weight: bold;">Confirm Status</p>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="unconfirm-paid" autocomplete="off" checked>
+                    <label class="btn btn-outline-danger" for="unconfirm-paid">UnConfirm</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="confirm-paid" autocomplete="off">
+                    <label class="btn btn-outline-success" for="confirm-paid">Confirm</label>
+                  
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Update Status</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content%}

@@ -1,0 +1,90 @@
+{% extends "Client/base-dashboard.html" %}
+{% block content %}
+{% load static %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-file-invoice"></i> Payment Instructions</div>
+        
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12 mt-3 mb-4">
+            <ol>
+              <li style="font-weight: bold;"> Register Fee</li>
+              <div class="row">
+                  <div class="col-md-12 mt-3 mb-3">
+                      <table class="table table-bordered text-center">
+                          <thead >
+                            <tr >
+                              <th scope="col" style="background-color: #65131a; color: #fff;">Register Category</th>
+                              <th scope="col" style="background-color: #65131a; color: #fff;">Early-bird Registration fees <br> (Before 15 April, 2024)</th>
+                              <th scope="col" style="background-color: #65131a; color: #fff;">Regular Registration fees <br> (After 15 April, 2024)</th>
+                            
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-start offset-2">Full Registration</td>
+                              <td>650 USD <br> (or 24,000 THB)</td>
+                              <td>750 USD <br> (or 28,000 THB)</td>
+                          
+                            </tr>
+                            <tr>
+                              <td class="text-start offset-2">Student Registration</td>
+                              <td>300 USD <br> (or 11,000 THB)</td>
+                              <td>350 USD <br> (or 13,000 THB)</td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="text-start offset-2">Paper Deposit</td>
+                              <td colspan="2">200 USD <br> (or 7,500 THB)</td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="text-start offset-2">Additional banquet Ticket</td>
+                              <td colspan="2">90 USD <br> (or 3,300 THB)</td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="text-start offset-2">Accompanying Person <br> Reception, Lunch, Banquet</td>
+                              <td colspan="2">200 USD <br> (or 7,500 THB)</td>
+                              
+                            </tr>
+                          </tbody>
+                        </table>
+                  </div>
+                  <div class="col-md-12 mt-1 mb-1">
+                   <p style="font-weight: bold;">Notes: </p>
+                  </div>
+                  <div class="col-md-12 mt-1 mb-3">
+                      <ol>
+                          <li>The Full Registration includes: Keynotes, Technical Sessions, Proceeding USB, Exhibition, Welcome Reception (27th), Dinner (27th), Conference Banquet (28th), Lunch (27th, 28th, 29th), Coffee Breaks and Conference Bag.</li>
+                          <li>The Student Registration includes: Keynotes, Technical Sessions, Proceeding USB, Exhibition, Welcome Reception (27th), Dinner (27th), Conference Banquet (28th), Lunch (27th, 28th, 29th), Coffee Breaks and Conference Bag. Student registration will be provided to  full-time students wtih valid ID.</li>
+                          <li>A Paper Deposit of $200 (or 7,500 THB) must be paid when each final full paper is submitted. The Paper Deposit Fee will be credited toward the registration. $200 (or 7,500 THB) will be automatically deducted during registration when your account has deposit pament record.</li>
+                      </ol>
+                     </div>
+              </div>
+             
+              <li style="font-weight: bold;"> Payment</li>
+              <div class="row">
+                  <div class="col-md-12 mt-3 mb-3">
+                      <ol>
+                          <li>Please try to pay teh paper deposit and registration fee via the online submission system, If you can not finish the payment via the online system, you can pay the paper deposit and registration fee via bank transfer, Note that please fill in the related paper deposit informantion and registration information in the online submission system first.</li>
+                       
+                      </ol>
+                     </div>
+              </div>
+             </ol>
+          </div>
+       
+        </div>
+       
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock content%}

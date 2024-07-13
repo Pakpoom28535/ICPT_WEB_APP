@@ -1,0 +1,31 @@
+$font-base: 'Roboto', sans-serif;
+$font-alt: 'Montserrat', sans-serif;
+
+$colors: (
+    black: #000000,
+    gray: #989898,
+    gray-dark: #626262,
+    gray-dark-2: #272727,
+    gray-light: #dfdfdf,
+    gray-light-2: #f6f6f6,
+    white: #ffffff,
+    white-2: #fefefe,
+    white-3: #fcfcfc,
+    blue: #4a90e2,
+    green: #33cb98,
+    green-2: #66b772,
+    orange: #ff7e5b,
+    orange-2: #ffa84c,
+    pink: #ff4081,
+    purple: #aa2e85,
+    red: #ef494d,
+);
+
+$grid-col-1-width: 100%;
+$grid-col-2-width: 50%;
+$grid-col-3-width: 33.33%;
+$grid-col-4-width: 25%;
+
+$gutter-small: 11px;
+$gutter-medium: 22px;
+$gutter-wide: 40px;

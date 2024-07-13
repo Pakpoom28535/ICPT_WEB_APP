@@ -1,0 +1,44 @@
+{% extends "Client/base-dashboard.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-file-signature"></i> Create Submission</div>
+
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-md-12 mt-3 mb-4">
+            <p>You may download Abstract template here...</p>
+          </div>
+          <div class="col-md-12 mt-3 mb-4">
+            <p>After finish your abstract you may attach file and submit here.</p>
+          </div>
+          <div class="col-md-6 mt-3 mt-3">
+            <form method="post" action="/CreateSubmission" enctype="multipart/form-data" style="width: 90rem;">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title" required />
+                <small id="title" class="form-text text-muted">Please enter Abstract Title</small>
+              </div>
+              <div class="form-group">
+
+                <input type="file" class="form-control-file" id="file" name="file"  required/>
+                <button class="btn btn-success" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content%}

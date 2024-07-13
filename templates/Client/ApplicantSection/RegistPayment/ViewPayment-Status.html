@@ -1,0 +1,76 @@
+{% extends "Client/base-dashboard.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-file-invoice"></i> Payment Instructions</div>
+        
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12 mt-3 mb-4">
+              <p>* After review has completed, The Ticket button will appear for download entry ticket and Receipt button for download receipt.</button></p>
+              <div class="table-responsive">
+                  <!-- Projects table -->
+                  <table class="table table-head-bg-primary mt-4">
+                    <thead>
+                      <tr>
+                        <th scope="col">Payment submit ID</th>
+                        <th scope="col">Registration Type</th>
+                        <th scope="col">Ref no.</th>
+                        <th scope="col">Amount Paid</th>
+                        <th scope="col">Date time</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>N-0001</td>
+                        <td>Regular</td>
+                        <td>312312</td>
+                        <td>฿ 20,000</td>
+                        <td>2024/8/9 21:32</td>
+                        <td class="text-end">
+                          <span class="badge badge-success">Completed</span>
+                        </td>
+                        <td class="text-end">
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-success">Ticket</button>
+                            <button type="button" class="btn btn-outline-success">Receipt</button>
+                           
+                          </div>
+                         
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>N-0001</td>
+                          <td>Regular</td>
+                          <td>312312</td>
+                          <td>฿ 20,000</td>
+                          <td>2024/8/9 21:32</td>
+                          <td class="text-end">
+                            <span class="badge badge-warning">Review</span>
+                          </td>
+                          <td class="text-end">
+                             
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                  </table>
+                </div>
+          </div>
+       
+        </div>
+       
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock content%}

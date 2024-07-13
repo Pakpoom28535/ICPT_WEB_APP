@@ -1,0 +1,44 @@
+{% extends "Client/base-clean.html" %}
+{% block content %}
+{% load static %}
+
+
+<section id="about" class="bg-white-2">
+    
+    <div class="limiter">
+        <div class="card">
+            <div class="card-body">
+                
+            </div>
+        </div>
+		<div class="container-login100">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-12 mt-4 mb-4 text-center">
+                            <h3>Please select Registration Type</h3>
+                        </div>
+                        <div class="col-6 pb-4 text-center">
+                            <a href=""></a>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="{% static 'assets/images/Regular.png'%}" style="width: 20rem;" alt="IMG">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pb-4 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="{% static 'assets/images/Visitor.png'%}" style="width: 20rem;" alt="IMG">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		
+		</div>
+	</div>
+</section>
+{% endblock content%}

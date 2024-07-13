@@ -1,0 +1,248 @@
+/*-------------------------------------*\
+    Color
+\*-------------------------------------*/
+
+@import 'variables';
+
+/* You can choose from 8 color schemes: blue, green, green-2, orange, orange-2, pink, purple, red */
+$base-color: map-get($colors, green); 
+
+
+/*
+* Heading style colors
+*/
+
+.title {
+    &-underline {
+        &-base-color {
+            border-color: $base-color;
+        }
+        
+        &-thick-base-color {
+            border-color: $base-color;
+        }
+    }
+    
+    &-sideline-base-color {
+        &:before {
+            background-color: $base-color;
+        }
+    }
+    
+    &-strikethrough-base-color {
+        &:before {
+            background-color: $base-color;
+        }
+    }
+}
+
+
+/*
+* Text color
+*/
+
+.text-base-color {
+    color: $base-color !important;
+}
+
+
+/*
+* Text color (on hover)
+*/
+
+.text-hover-base-color {
+    &:hover, &:focus {
+        color: $base-color !important;
+    }
+}
+
+
+/*
+* Background color
+*/
+
+.bg-base-color {
+    background-color: $base-color !important;
+}
+
+
+/*
+* Background color (on hover)
+*/
+
+.bg-hover-base-color {
+    &:hover {
+        background-color: $base-color !important;
+    }
+}
+
+
+/*
+* Border color
+*/
+
+.border-base-color {
+    border-color: $base-color !important;
+}
+
+
+/*
+* Button colors
+*/
+
+.btn {
+    &.btn-base-color {
+        background-color: $base-color;
+
+        &.btn-hover-transparent {
+            &:hover {
+                border-color: $base-color;
+                color: $base-color;
+            }
+        }
+    }
+    
+    &.btn-outline-base-color {
+        border-color: $base-color;
+        color: $base-color;
+
+        &:hover {
+            background-color: $base-color;
+        }
+
+        &.btn-hover-transparent {
+            &:hover, &:focus {
+                color: $base-color;
+            }
+        }
+    }
+}
+
+
+/*
+* Preloader color
+*/
+
+.pace {
+    .pace-progress {
+        background-color: $base-color;
+    }
+}
+
+
+/*
+* Nav tabs (Section - Schedule)
+*/
+
+%nav-tabs-active {
+    background-color: $base-color !important;
+}
+    
+.nav-tabs {
+    > li {
+        &.active {
+            > a {
+                @extend %nav-tabs-active;
+                
+                &:hover {
+                    @extend %nav-tabs-active;
+                }
+                
+                &:focus {
+                    @extend %nav-tabs-active;
+                }
+            }
+        }  
+    }
+}
+
+
+/*
+* Nav stacked (Section - FAQ)
+*/
+
+%nav-stacked-active {
+    background-color: $base-color;
+    color: map-get($colors, white);
+}
+    
+.nav {
+    &.nav-pills {
+        &.nav-stacked {
+            > li {
+                &.active {
+                    > a {
+                        @extend %nav-stacked-active;
+                
+                        &:hover {
+                            @extend %nav-stacked-active;
+                        }
+
+                        &:focus {
+                            @extend %nav-stacked-active;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*
+* Accordions (Section - FAQ)
+*/
+
+.panel-group {
+    .panel {
+        &.active {
+            .panel-heading {
+                background-color: $base-color;
+            }
+        }
+    }
+}
+
+
+/*
+* Countdown
+*/
+
+.countdown {
+    .clock-item {
+        background-color: $base-color;
+    }
+}
+
+
+/*
+* Pricing (Section - Ticket)
+*/
+
+.pricing {
+    ul {
+        > li {
+            &.check-mark {
+                &:before {
+                    background-color: $base-color;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+* Timeline (Section - Schedule)
+*/
+
+.timeline {
+    &-item {
+        &.highlight {
+            &:before {
+                background-color: $base-color;
+                border: $base-color;
+            }
+        }
+    }
+}

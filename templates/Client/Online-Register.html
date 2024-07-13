@@ -1,0 +1,441 @@
+{% extends "Client/base-clean.html" %}
+{% block content %}
+{% load static %}
+
+
+<section id="about" class="bg-white-2">
+  <div class="limiter">
+  <div class="container-login100" >
+    <!-- <form method="post" action="/signin" id="form_register" style="width: 90rem;">
+      {% csrf_token %}
+        
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Create your account</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6s col-lg-4">
+
+                <div class="form-group">
+                    <label for="email2">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email_data"
+                      name="email"
+                      placeholder="Enter Email"
+                      required
+                    />
+                    <small id="emailHelp2" class="form-text text-muted"
+                      >We'll never share your email with anyone
+                      else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Register Type</label>
+                    <select class="form-select" id="exampleFormControlSelect1" name="type" required>
+                        <option value="" disabled selected>Please select registration type</option>
+                        {% for i in Group_llist %}
+                          <option value="{{ i.id }}">{{ i.name }}</option>
+                        {% endfor %}
+                      
+                    </select>
+                  </div>
+
+                  <hr>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select Title</label>
+                    <select class="form-select" id="exampleFormControlSelect1" required>
+                        <option value="" disabled selected>Please select a Title</option>
+                      <option value="mr">Mr.</option>
+                      <option value="mrs">Mrs.</option>
+                      <option value="ms">Ms.</option>
+                      <option value="dr">Dr.</option>
+                      <option value="prof">Prof.</option>
+                    </select>
+                  </div>
+                  
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                  placeholder="Enter Firstname"
+                  name="first_name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="middle-name">Middle Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="middle-name"
+                  placeholder="Enter Middlename"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  name="last_name"
+                  placeholder="Enter Lastname"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter Phone"
+                  required
+                />
+              </div>
+            
+              <div class="form-group">
+                <label for="fax">Fax</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fax"
+                  placeholder="Enter Fax"
+                />
+              </div>
+
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="form-group">
+                    <label for="researchFieldSelect">Select Research Field</label>
+                    <select class="form-select" id="researchFieldSelect" required>
+                      <option value="" disabled selected>Please select a research field</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                    <label for="institution">Institution</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="institution"
+                      placeholder="Enter Institution"
+                      required
+                    />
+                  </div>
+
+
+                  <div class="form-group">
+                    <label for="text">Address</label>
+                    <textarea class="form-control" id="address" rows="5" required>
+                    </textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city"
+                      placeholder="Enter City"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="country">Country</label>
+                    <select class="form-select" id="countrySelect" required>
+                        <option value="" disabled selected>Please select a country</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="state-province">State / Province</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="state-province"
+                      placeholder="Enter state / province"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="zip-postalcode">Zip / Postal Code</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="zip-postalcode"
+                      placeholder="Enter Zip / Postal Code"
+                      required
+                    />
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center" style="display: flex; align-items: center;">
+                <img src="{% static 'assets/images/registerimage.svg' %}" alt=""/>
+            </div>
+          </div>
+        </div>
+        <div class="card-action text-center">
+          <button type="submit" class="btn btn-success">Submit</button>
+          <a href="/signin" class="btn btn-danger">Back</a>
+        </div>
+      </div>
+      
+    </form> -->
+    <form method="post" action="/signin" id="form_register" style="width: 90rem;">
+      {% csrf_token %}
+        
+      <div class="card">
+          <div class="card-header">
+              <div class="card-title">Create your account</div>
+          </div>
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-6 col-lg-4">
+  
+                      <div class="form-group">
+                          <label for="email_data">Email Address</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email_data"
+                            name="email"
+                            placeholder="Enter Email"
+                            required
+                          />
+                          <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">Register Type</label>
+                          <select class="form-select" id="exampleFormControlSelect1" name="User_type" required>
+                              <option value="" disabled selected>Please select registration type</option>
+                              {% for i in Group_llist %}
+                                  <option value="{{ i.id }}">{{ i.name }}</option>
+                              {% endfor %}
+                          </select>
+                      </div>
+  
+                      <hr>
+                      <div class="form-group">
+                          <label for="titleSelect">Select Title</label>
+                          <select class="form-select" id="titleSelect" name="title" required>
+                              <option value="" disabled selected>Please select a Title</option>
+                              <option value="mr">Mr.</option>
+                              <option value="mrs">Mrs.</option>
+                              <option value="ms">Ms.</option>
+                              <option value="dr">Dr.</option>
+                              <option value="prof">Prof.</option>
+                          </select>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="first-name">First Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="first-name"
+                            placeholder="Enter Firstname"
+                            name="first_name"
+                            required
+                          />
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="middle-name">Middle Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="middle-name"
+                            placeholder="Enter Middlename"
+                            name="middle_name"
+                          />
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="last-name">Last Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="last-name"
+                            name="last_name"
+                            placeholder="Enter Lastname"
+                            required
+                          />
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="phone">Phone</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter Phone"
+                            required
+                          />
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="fax">Fax</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="fax"
+                            name="fax"
+                            placeholder="Enter Fax"
+                          />
+                      </div>
+  
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="form-group">
+                          <label for="researchFieldSelect">Select Research Field</label>
+                          <select class="form-select" id="researchFieldSelect" name="research_field" required>
+                              <option value="" disabled selected>Please select a research field</option>
+                              <!-- Add options dynamically here if needed -->
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="institution">Institution</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="institution"
+                            name="institution"
+                            placeholder="Enter Institution"
+                            required
+                          />
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="address">Address</label>
+                          <textarea class="form-control" id="address" name="address" rows="5" required></textarea>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="city">City</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="city"
+                            name="city"
+                            placeholder="Enter City"
+                            required
+                          />
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="countrySelect">Country</label>
+                          <select class="form-select" id="countrySelect" name="country" required>
+                              <option value="" disabled selected>Please select a country</option>
+                              <!-- Add options dynamically here if needed -->
+                          </select>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="state-province">State / Province</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="state-province"
+                            name="state_province"
+                            placeholder="Enter state / province"
+                            required
+                          />
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="zip-postalcode">Zip / Postal Code</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="zip-postalcode"
+                            name="zip_postal_code"
+                            placeholder="Enter Zip / Postal Code"
+                            required
+                          />
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 text-center" style="display: flex; align-items: center;">
+                      <img src="{% static 'assets/images/registerimage.svg' %}" alt=""/>
+                  </div>
+              </div>
+          </div>
+          <div class="card-action text-center">
+              <button type="submit" class="btn btn-success">Submit</button>
+              <a href="/signin" class="btn btn-danger">Back</a>
+          </div>
+      </div>
+  </form>
+  
+  </div>
+</div>
+</section>
+<script>
+    $(document).ready(function() {
+            $('#form_register').submit(function(event) {
+                // Prevent the default form submission behavior
+                event.preventDefault();
+                
+                // Call your save function
+                save();
+            });
+        });
+   function save(){
+   
+    Swal.fire({
+        title: 'Plase Readme Before Register',
+        icon: 'warning',
+        text: "When Sumbit the infomation System will be send a Username and Password to this email: "+ $('#email_data').val(),
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Agree',
+        cancelButtonText: 'Not Agree'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            event.preventDefault(); // Prevent the default form submission.
+            var formData = $('#form_register').serialize(); // Serialize the form data.
+          
+        
+            $.ajax({
+              type: "POST", // Use POST method to send data.
+              url: "/Client-Register", // Replace with your server-side URL.
+              data: formData,
+              success: function(response) {
+                // Handle the server response here (e.g., display a message).
+                console.log(response);
+                if(response['data'] == "ok"){
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success',
+                        text: 'Register Complete',  // Display the first message
+                        showConfirmButton: false, // This will remove the "OK" button
+                    });
+                          // After 5 seconds, reload the page
+                          setTimeout(function () {
+                            window.location.href = "/signin";
+                        }, 2000); // 3000 milliseconds = 3 seconds
+                }else{
+                  Swal.fire({
+                    icon: 'error',
+                    title: 'Register Fail',
+                    text: response['res'],  // Display the first message
+                });
+                }
+              
+              }
+            });
+        }
+      });
+ }
+</script>
+{% endblock content%}

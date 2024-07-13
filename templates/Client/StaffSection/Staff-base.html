@@ -1,0 +1,325 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025</title>
+    <meta name="description" content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025"/>
+    <meta name="keywords" content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+    <link
+    rel="icon"
+   
+    href="{% static 'assetslib/img/kaiadmin/favicon.ico'% }"
+    type="image/x-icon"
+  />
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="{% static 'assetslib/js/plugin/webfont/webfont.min.js'%}"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Public Sans:300,400,500,600,700"] },
+      custom: {
+        families: [
+          "Font Awesome 5 Solid",
+          "Font Awesome 5 Regular",
+          "Font Awesome 5 Brands",
+          "simple-line-icons",
+        ],
+        urls: ["{% static 'assetslib/css/fonts.min.css'%}"],
+      },
+      active: function () {
+        sessionStorage.fonts = true;
+      },
+    });
+  </script>
+
+<script src="{% static 'js/registercompo.js' %}"></script>
+<script src="{% static 'js/alert.js' %}"></script>
+
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'assetslib/css/bootstrap.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'assetslib/css/plugins.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'assetslib/css/kaiadmin.min.css'%}" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="{% static 'assetslib/css/demo.css'%}" />
+    </head>
+<body id="page-top">
+  <section id="about" class="bg-white-2">
+    <div class="wrapper">
+          <!-- Sidebar -->
+          <div class="sidebar" data-background-color="dark">
+            <div class="sidebar-logo">
+              <!-- Logo Header -->
+              <div class="logo-header" data-background-color="dark">
+                <a href="/Staff-Dashboard" class="logo">
+                  <img
+                  src="{% static 'assets/images/Logo/ICPT2025top.svg' %}"
+                    alt="navbar brand"
+                    class="navbar-brand"
+                    style="width: 12rem;"
+                  />
+                </a>
+                <div class="nav-toggle">
+                  <button class="btn btn-toggle toggle-sidebar">
+                    <i class="gg-menu-right"></i>
+                  </button>
+                  <button class="btn btn-toggle sidenav-toggler">
+                    <i class="gg-menu-left"></i>
+                  </button>
+                </div>
+                <button class="topbar-toggler more">
+                  <i class="gg-more-vertical-alt"></i>
+                </button>
+              </div>
+              <!-- End Logo Header -->
+            </div>
+            <div class="sidebar-wrapper scrollbar scrollbar-inner">
+              <div class="sidebar-content">
+                <ul class="nav nav-secondary">
+                  
+                  <li class="nav-section">
+                    <span class="sidebar-mini-icon">
+                      <i class="fa fa-ellipsis-h"></i>
+                    </span>
+                    <h4 class="text-section">MENU</h4>
+                  </li>
+                    <li class="nav-item">
+                      <a href="/Staff-Dashboard">
+                        <i class="fas fa-home"></i>
+                        <p> Dashboard</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/Applicant-List">
+                        <i class="fas fa-users"></i>
+                        <p>Applicant List</p>
+                      </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="/Visitor-List">
+                            <i class="fas fa-users"></i>
+                          <p>Visitor List</p>
+                        </a>
+                    </li> -->
+          
+                    <li class="nav-item">
+                      <a href="/admin">
+                          <i class="fas fa-users"></i>
+                        <p>Supper Admin Site</p>
+                      </a>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      <!-- End Sidebar -->
+  
+        <div class="main-panel">
+          <div class="main-header">
+            <div class="main-header-logo">
+              <!-- Logo Header -->
+              <div class="logo-header" data-background-color="dark">
+                <a href="index.html" class="logo">
+                  <img
+                    src="{% static 'assetslib/img/kaiadmin/logo_light.svg'%}"
+                    alt="navbar brand"
+                    class="navbar-brand"
+                    height="20"
+                  />
+                </a>
+                <div class="nav-toggle">
+                  <button class="btn btn-toggle toggle-sidebar">
+                    <i class="gg-menu-right"></i>
+                  </button>
+                  <button class="btn btn-toggle sidenav-toggler">
+                    <i class="gg-menu-left"></i>
+                  </button>
+                </div>
+                <button class="topbar-toggler more">
+                  <i class="gg-more-vertical-alt"></i>
+                </button>
+              </div>
+              <!-- End Logo Header -->
+            </div>
+            <!-- Navbar Header -->
+            <nav
+              class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+            >
+              <div class="container-fluid">
+          
+  
+                <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                  <li
+                    class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-search animated fadeIn">
+                      <form class="navbar-left navbar-form nav-search">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            placeholder="Search ..."
+                            class="form-control"
+                          />
+                        </div>
+                      </form>
+                    </ul>
+                  </li>
+                 
+               
+              
+                  <li class="nav-item topbar-user dropdown hidden-caret">
+                    <a
+                      class="dropdown-toggle profile-pic"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      aria-expanded="false"
+                    >
+                   
+                      <span class="profile-username">
+                        <span class="op-7">Hi,</span>
+                        <span class="fw-bold">{{ name }}</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user animated fadeIn">
+                      <div class="dropdown-user-scroll scrollbar-outer">
+                       
+                        <li>
+                      
+                          <a class="dropdown-item" href="/signout">Logout</a>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- End Navbar -->
+          </div>
+  
+          <div class="container">
+            <div class="page-inner">
+           
+              <div
+              class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4"
+            >
+              <div>
+                <h3 class="fw-bold mb-3">Staff Dashboard</h3>
+              
+              </div>
+        
+            </div>
+
+              {% block content %}
+
+
+              {% endblock content%}
+           
+              </div>
+            </div>
+          </div>
+  
+         
+        </div>
+      </div>
+</section>
+    
+<script>
+   function alert(logic,header,msg){
+    var content = {};
+      content.message =msg;
+      content.title = header;
+      content.icon = "fa fa-bell";
+    if(logic == "success"){
+
+
+      $.notify(content, {
+        type: 'success',
+        placement: {
+          from: 'top',
+          align: 'right',
+        },
+        time: 1000,
+        delay: 100,
+        
+      });
+    }else if(logic == "error"){
+      $.notify(content, {
+        type: 'danger',
+        placement: {
+          from: 'top',
+          align: 'right',
+        },
+        time: 1000,
+        delay: 100,
+        
+      });
+    }else{
+    }
+
+  }
+</script>
+<!-- Site footer -->
+
+   <!--   Core JS Files   -->
+   <script src="{% static 'assetslib/js/core/jquery-3.7.1.min.js'%}"></script>
+   <script src="{% static 'assetslib/js/core/popper.min.js'%}"></script>
+   <script src="{% static 'assetslib/js/core/bootstrap.min.js'%}"></script>
+
+   <!-- jQuery Scrollbar -->
+   <script src="{% static 'assetslib/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js'%}"></script>
+
+   <!-- Chart JS -->
+   <script src="{% static 'assetslib/js/plugin/chart.js/chart.min.js'%}"></script>
+
+   <!-- jQuery Sparkline -->
+   <script src="{% static 'assetslib/js/plugin/jquery.sparkline/jquery.sparkline.min.js'%}"></script>
+
+   <!-- Chart Circle -->
+   <script src="{% static 'assetslib/js/plugin/chart-circle/circles.min.js'%}"></script>
+
+   <!-- Datatables -->
+   <script src="{% static 'assetslib/js/plugin/datatables/datatables.min.js'%}"></script>
+
+   <!-- Bootstrap Notify -->
+   <script src="{% static 'assetslib/js/plugin/bootstrap-notify/bootstrap-notify.min.js'%}"></script>
+
+   <!-- jQuery Vector Maps -->
+   <script src="{% static 'assetslib/js/plugin/jsvectormap/jsvectormap.min.js'%}"></script>
+   <script src="{% static 'assetslib/js/plugin/jsvectormap/world.js'%}"></script>
+
+   <!-- Sweet Alert -->
+   <script src="{% static 'assetslib/js/plugin/sweetalert/sweetalert.min.js'%}"></script>
+
+   <!-- Kaiadmin JS -->
+   <script src="{% static 'assetslib/js/kaiadmin.min.js'%}"></script>
+
+   <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+   <script src="{% static 'assetslib/js/setting-demo.js'%}"></script>
+   <script src="{% static 'assetslib/js/demo.js'%}"></script>
+
+   
+
+
+
+
+</body>
+</html>

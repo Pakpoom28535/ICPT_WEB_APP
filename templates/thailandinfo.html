@@ -1,0 +1,607 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025</title>
+    <meta name="description" content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025"/>
+    <meta name="keywords" content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Loading Bootstrap CSS -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+        
+    <!-- Loading Font Icons -->
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    
+    <!-- Include all css plugins (below), or include individual files as needed -->
+    <link href="{% static 'assets/css/flickity.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    
+    <!-- Main CSS -->
+    <link href="{% static 'assets/css/dione_main.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/dione_style.css' %}" rel="stylesheet" type="text/css">
+    
+    <!-- Color Skins CSS -->
+    <link href="{% static 'assets/css/dione_color_icpt.css' %}" rel="stylesheet" type="text/css">
+    <style>
+        .bg-fimage{
+            background-image: url("{% static 'assets/images/bg-engineer.png' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+    </style>
+    
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+
+    <![endif]-->
+    </head>
+<body id="page-top">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    
+    <!-- Navigation Start -->
+    <nav id="navigation" class="navbar navbar-fixed-top navbar-white">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header col-md-3">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-dione">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand page-scroll font-family-alt letter-spacing-1 text-extra-large text-uppercase" href="/">
+                        <img src="{% static 'assets/images/Logo/ICPT2025top.svg' %}" alt=""/>
+                        <!-- <h5 class="brand-icons" style=" font-weight: 800; font-style: italic; color: #fff;">ICPT 2025  </h5> -->
+                    </a>
+                </div>
+            
+                
+                <div id="navbar-dione" class="navbar-collapse collapse col-md-9 pull-right">
+                    <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-small text-uppercase">
+                        <li><a href="#about" class="page-scroll">Getting to know Chiang Mai</a></li>
+                        <li><a href="#fact" class="page-scroll">Fast Fact</a></li>
+                        <li><a href="#travel" class="page-scroll">travel to Chiang Mai</a></li>
+                        <li><a href="#contact" class="page-scroll">contact</a></li>
+                        
+                    </ul>
+                </div>
+          
+            </div>
+  
+        </div>
+  
+    </nav>
+
+    
+    
+    
+  <!-- Section - Home Start -->
+  <section id="home-bg-parallax" class="height-100 no-padding overflow-hidden width-100">
+    <!-- BG Parallax -->
+    <div class="bg-parallax bg-overlay-black-4 width-auto"></div>
+    
+    <div class="display-table height-100 position-absolute position-top position-left width-100">
+        <div class="display-table-cell vertical-align-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <img class="center-logo" src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt=""/>
+                        <!-- <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 text-uppercase text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
+                            The Annual<br>
+                            Conference!
+                        </h2> -->
+
+                        <p class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-gray-light-2 xs-text-large text-extra-large text-uppercase" style="font-weight: 600;">
+                            14th International Conference on Road
+                            <br>and Airfield Pavement Technology 2025
+                            <br><span style="color: #eaaf51; font-weight: 700;">16 - 18 July 2025</span>
+                            <br><span style="color: #eaaf51; font-weight: 700;">Chiang Mai Merriott Hotel</span>
+                        </p>
+                        <!-- <a href="#intro" class="page-scroll btn btn-base-color sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl">16th to 18th July 2025 CHIANG MAI, Thailand</a> -->
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</section>
+<!-- //Section - Home End -->
+    
+    
+    
+   
+    
+    
+    
+         <!-- Section - About Thailand -->
+         <section id="about" class="bg-white-2">
+            <div class="container">
+                <div class="row no-padding-rl no-padding-top padding-8">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">Getting to know Chiang Mai</h3>
+                        <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">
+                            "Experience the enchanting blend of ancient charm and modern vibrancy in Chiang Mai, Thailand's cultural gem."</p>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row g-5">
+                    <div class="col-lg-5">
+
+                        <div class="position-relative h-100">
+                            <div class="card pb-3 mb-2">
+                                <img class=" w-100 h-100 rounded" data-wow-delay="0.9s" src="{% static 'assets/images/travel5.png' %}" style="object-fit: cover;">
+                            </div>
+                            <!-- <div class="card pb-3">
+                                <img class=" w-100 h-100 rounded" data-wow-delay="0.9s" src="{% static 'assets/images/watphasing.png' %}" style="object-fit: cover;">
+                            </div> -->
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="section-title position-relative pb-3 mb-5">
+                            <h5 class="font-family-alt text-uppercase">Chiang Mai</h5>
+                            <h1 class="font-family-alt mb-0" style="color: #65131a; font-weight: 500;">The charming city, the city of people, the city of Lanna culture.</h1>
+                        </div>
+                        <br/>
+                        <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;Nestled amidst the mountains of northern Thailand, Chiang Mai offers a unique blend of culture, history, and adventure.With a population of over 170,000 in the city and more than 1 million in the metropolitan area, it is Thailand’s fifth largest city. The city is situated 700 kilometers north of Bangkok, sitting on an elevated plain (Elevation: 316 m) among the rolling foothills of the Himalayan Mountains. Its relatively remote geography has helped keep Chiang Mai’s distinctive charm intact.</p>
+                        <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;Founded in 1296 CE, Chiang Mai is a culturally and historically significant city, one being the capital of the ancient Lanna kingdom. This history is exemplified by Chiang Mai’s walled city (city is chiang in the northern Thai dialect while mai in new, hence Chiang Mai or New City). Sections of  these ancient walls and moat remain intact, dating to their restoration several decades ago.</p>
+                        <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;Inside Chiang Mai’s remaining city walls are more than 30 temples, some dating back to the founding of the principality. They are marked by a diversity of Burmese, Sri Lankan and Lanna Thai styles, and adorned with intricate wood carvings, Naga staircases, leonine and angelic guardians, gilded umbrellas and pagodas with gold filigree.</p>
+                        <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;Modern-day Chiang Mai has expanded in all directions, but particularly to the east towards the Ping River (Mae Nam Ping), where Chang Klan Rd, the famous Night Bazaar and the bulk of Chiang Mai’s hotels and guest houses are located. Loi Kroh Rd is the center of the city’s nightlife. </p>
+                        <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;A dynamic city, Chiang Mai manages to combine its rich history and traditions with its increasing modern side that promises to be an eclectic experience for all to enjoy.</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- //.container -->
+        </section>
+        <!-- //Section - About End -->
+     <!-- Section - About Thailand -->
+     <section id="fact" class="bg-white-2">
+        <div class="container">
+            <div class="row no-padding-rl no-padding-top padding-8">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">Fast Fact About Thailand And Chiang Mai</h3>
+                    <!-- <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">What you will learn and the benefits. Lorem Ipsum is simply dummy text of<br>the printing and typesetting industry. Lorem Ipsum has.</p> -->
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+        <div class="row g-5">
+            <div class="col-md-12 pb-3">
+                <div class="features-box col-sm-12 col-md-12">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative" data-mh="mh-features-box-v3">
+                        <div class="display-table height-100 no-padding-rl padding-7 width-100">
+                            <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
+                                <div class="row">
+                                  
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Time Difference</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Thailand and Chiang Mai have an extensive network of transportation options, including buses, trains, taxis, tuk-tuks, and motorbike taxis. Grab, a popular ride-hailing app, is widely used in major cities.
+                                                            Exploring the city (Especially at Chiang Mai) on foot or by bicycle is also a popular option.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Location</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Chiang Mai's standard time zone is UTC/GMT +7 hours, one hour behind major Asian cities such as Singapore, Kuala Lumpur, Manila, and Jakarta(-2.5 hours from Mumbai & New Delhi).
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Currency</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            The official currency of Thailand is the Thai Baht (Thai:บาท, Symbol: ฿; code: THB)
+                                                        </p>
+                                                        <p>- Coins come in denominations of: 1, 2, 5 and 10 Bath, as well as 25 and 50 satang.</p>
+                                                        <p>- Banknotes come in denominations of: 20, 50, 100, 500 and 1,000 Baht.</p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            At present time, the average exchange to USD was approximately THB ฿36 = USD $1.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Tipping</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Tipping is not customary in Thailand, and there is no requirement to tip anyone. Most restaurants and hotels include a ten percent service charge in the bill; this surcharge already acts as a tip of sorts, which is combined and shared among all employees at the end of the month in addition to their salaries. However, while tipping is not expected, small gratuities for great service are very much appreciated.
+                                                        </p>
+                                                        <p>Examples:</p>
+                                                        <p>- While all public taxi rates are metered, both Thais and Foreigners commonly round off the fare upwards as a tip (i.e. 51 Baht fare rounded up to  60 Baht)</p>
+                                                        <p>- Tipping staff is not expected, but again is always appreciated. e.g. 20 – 50 Baht for the porter that curried your bags up to your room; a small tip on your bed for the cleaning lady.</p>
+                                                        <p>- In all restaurants, local patrons make it a habit to leave behind any coins from change as a tip.</p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Keep in mind that the majority of workers in Thailand’s hospitality and service industries earn very little, so a small tip goes a long way and will generally bring out extra enthusiastic service.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Electricity</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Electrical outlets in Thailand  typically use a 220V/50Hz AC voltage standard. Thailand  power outlets are typically two-pronged hybrid outlets (accepting ungrounded North American (A) and European (C) standard plugs. For sensitive electronic devices lacking multi-voltage power adapters, the use of surge protectors is recommended. Outlet adapters/universal sockets will be provided in the hotel rooms.
+                                                        </p>
+                                                      
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Water</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Drinking water out of the tap is not recommended. Bottled water is cheap and widely available at 7-15 Baht a bottle. Drinking water served in restaurants is always at least boiled, but when in doubt request bottled water. Ice in Thailand usually comes packaged straight from the factory and is safe.
+                                                        </p>
+                                                      
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Gesturing</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Pointing with fingers is considered rude. Try to gesture with your eyes or at the very least your whole hand. To beckon someone, extend your arm with the palm of your hand down and flutter your fingers up and down. For example, when hailing taxis, it is common to keep your hand horizontal, fingers facing down.
+                                                        </p>
+                                                   
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Temple and Monks</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            When visiting temples, dress conservatively.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Many temples state that photography is not allowed. Even if there is no sign, please be respectful and consider whether it is appropriate to take flash photography of a place of worship.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Always remove your shoes when entering temples (this rule also applies to peoples’ homes) and do not sit with your feet towards the Buddha – sit with your feet tucked behind you. Also, do not cross your legs in the presence of the elderly or monks. In Thai culture, the feet are considered the lowest, dirtiest part of the body, and the head the highest. Do not point to things with your feet, hold doors open with your feet, point your feet to the Buddha images, point at or touch peoples’ hands, or under any circumstance (especially women), touch a  monk.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">The WAI</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Unless you know the right way to ‘Wai’ , the appropriate hand position and to  whom, it is best just to acknowledge a wai with a smile and a nod.
+                                                        </p>
+                                                       
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Safety</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Chiang Mai is a relatively safe place to visit. Nevertheless, visitors Should take certain precautions in order to keep their trip trouble free. Stay hydrated, especially during hot weather, and avoid drinking tap water. Mosquito repellent is essential to prevent mosquito-borne illnesses such as dengue fever. Respect local customs and traditions, including modest dress when visiting temples.
+                                                        </p>
+                                                      <p>Simple safety tips to follow:</p>
+                                                      <p>- Don’t carry around large amounts of money, and avoid wearing expensive jewelry or looking flashy.</p>
+                                                      <p>- Drawing unnecessary attention to one’s self is never a good idea.</p>
+                                                      <p>- Try blending into the crowd instead of sticking out.</p>
+                                                      <p>- Leaving irreplaceable items in a hotel room is not a wise decision. Store valuables in the hotel’s in-room safes.</p>
+                                                      <p>- Avoid traveling alone at night in quiet and dimly lit areas.</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Insurance</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            For the purpose of this summit, client attendees will be provided travel insurance policies by ACE Insurance. Yahoo! Employees are covered by the company’s Cigna International Policy for traveling abroad. We highly recommend that you confirm that you have an insurance policy in place before arriving in Chiang Mai. Make sure that it covers medical expenses. While the medical facilities in Chiang Mai are good, some services may not be available and require evacuation for appropriate medical attention and treatment.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Please note that some insurance policies do not cover “dangerous activities,” which can include rock/tree climbing, animal hazards, and some water sports.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Visa</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Tourist Visa requirements for citizens of different countries will vary. Select countries are not required to obtain a visa when entering Thailand for tourism purposes and will be permitted to stay in the kingdom for a period not exceeding 30 days; these countries include: Hong Kong, Indonesia, Malaysia, Philippines, Singapore, Vietnam, United Kingdom, United States, and Canada.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Visitors from other countries may apply for a Visa on Arrival at international checkpoints and airports for the purpose of tourism for a period not exceeding 15 days. Countries that require this Visa include: China, India, and Taiwan. Visa on Arrival applicants must have in hand at least 10,000 baht per person or 20,000 baht per family, as well as a passport with at least six-month validity and a fully paid return ticket which is usable within 15 days of arriving in Thailand. Visa on arrival applicants must also provide a recent photo (size 4x6 cm) or take within 6 months is required and pay the application fee of 2,000 Baht for a single entry.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">ATM</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Automated Teller Machines (ATMs) are plentiful throughout Thailand, and most will accept cards issued by and of the major international banking networks. Please note that most Thai banks are now charging a 150 Bath fee per withdrawal when you use their ATMs. In addition, your home bank may also levy a fee. Most Thai ATM machines will deliver a maximum of 20 banknotes per withdrawal, so the effective limit of an ATM withdrawal is 20,000 Baht.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Credit Cards</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Major credit cards such as Visa, Mastercard, JCB and American Express, are readily accepted at most hotels, airlines, restaurants and upscale merchants. Be aware that many shops in Thailand, while accepting credit cards, will often charge you more for using one.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            The typical surcharges are 3% for Visa or MasterCard and 5% for American Express. When paying by Credit Card (hotels, restaurant, shops etc), insist on being billed in Thai Baht. Being billed in your home currency involves both a hidden surcharge and bad exchange rates and can add up to 5% of the net cost.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Foreign Exchange</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            FOREX (Foreign EXchange) booths are very common and clearly post their daily exchange rates on an electronic notice board. They accept all major currencies. Rates offered will be the same at all branches of the same bank, when measured at the same point in time. It is recommended that you do not buy Thai Baht until you arrive in Thailand as exchange rates offered in Thailand are usually better. Do note that FOREX booths generally will not accept bank notes that are in poor condition (torn, ripped, damaged or excessively marked/stamped).
+                                                        </p>
+                                                       
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Taxes</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            VAT (value Added Tax) or sales Tax, is 7% on all purchases. VAT is supposed to be charged for both goods and services, though in practice this varies. In many instances, purchase totals do not add VAT. In such cases, VAT is either included in the price or not charged at all.
+                                                        </p>
+                                                      
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Telephone</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Thailand’s country code is 66. Thailand phone numbers have a 3-digit area code, plus 7-digit local number in the form: 123-4567.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            The domestic access code for mobile numbers in Thailand is 08. When in Thailand, dial a mobile number as follows: 08 1234 5678. Overseas calls to Thailand mobile numbers should be dialed as follows: + 66 8 1234 5678.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Thailand has a good mobile network with several international players operating their network here. Roaming agreements exist with many international mobile phone companies.
+                                                        </p>
+                                                      
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Weather</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Thailand's weather tends to be defined by three seasons: the summer season, the rainy season and the cool season.
+                                                        </p>
+                                                      <p>Simple safety tips to follow:</p>
+                                                      <p><span style="color: brown; font-weight: 600;">Rainy season (Known as ruedu fon, starts from mid of May - mid of October) </span> This season is most notable in the north of the country where temperatures are more changeable throughout the year. In spots like Chiang Mai average temperatures peak at around 37°C in April - with minimal breeze and relatively little rainfall. The month of April is characterized by constant high temperatures, with daily highs around 36-37°C throughout the month, rarely exceeding 40°C or dropping below 25°C.</p>
+                                                      <p><span style="color: brown; font-weight: 600;">Summer season (Known as ruedu ron, starts from mid of February - mid of May)</span> In this season the rain does tend to fall on most days but tends to come in short bursts of an hour or two in the afternoon or overnight, with the heaviest rain falling in September and October. The month of July is characterized by constant high temperatures, with daily highs around 30-32°C throughout the month, rarely exceeding 35°C or dropping below 22°C. The relative humidity typically ranges from 54% (mildly humid) to 97% (very humid) over the course of a typical July. Expect some precipitation (65% chance on any given day), with little variation over the course of the month.</p>
+                                                      <p><span style="color: brown; font-weight: 600;">Cool Season (Known as ruedu nao, starts from mid of October - mid of February)</span> This season is cooler and has more comfortable humidity. This also means less rainfall and it is this combination that makes the cool season is the best time and also one of the most high seasons of the year to visit Thailand and Chiang Mai. The month of November is characterized by constant high temperatures, with daily highs around 28°C throughout the month, rarely exceeding 35°C or dropping below 0°C.</p>
+                                                      
+                                                    </div>
+                                                   
+                                                   
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Public Behavior</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Thai people are very modest in nature. Loud or abusive expression of anger should be avoided at all costs.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Furthermore, excessive public displays of affection and nudity are frowned upon.
+                                                        </p>
+                                                       
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase text-base-color">Emergencies</span>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            The following list of Chiang Mai Emergency Numbers will help you deal with most emergency situations.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            Chiang Mai has well equipped emergency services and good medical facilities. In addition to the normal Police, Chiang Mai also has a Tourist Police section with officers speaking English, as well as some other languages. These officers are available 24 hours a day.
+                                                        </p>
+                                                        <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                                            If you are not sure which number to call, Chiang Mai has an Emergency Help number, 191 that will refer your call to the correct service. Government Offices in Chiang Mai are open from 8:30am to 4:30pm Monday to Friday.
+                                                        </p>
+                                                        <p>- Police: 191</p>
+                                                        <p>- Tourist Police: 1155</p>
+                                                        <p>- Medical Emergency: 1699</p>
+                                                        <p>- Traffic Accident Police: 1193</p>
+                                                        <p>- Fire Department: 199</p>
+                                                        <p>- Tourist Assistance Center: +66 2 134 4077 (24/7 hotline)</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">0.2 mile from venue</span> -->
+                            </div>
+                            <!-- //.display-table-cell -->
+                        </div>
+                        <!-- //.display-table -->
+                        
+                       
+                    </div>
+                    <!-- //.border -->
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //Section - About End -->
+
+      <!-- Section - About Thailand -->
+      <section id="travel" class="bg-white-2">
+        <div class="container">
+         
+            
+            <div class="row g-5">
+                <div class="col-lg-5">
+
+                    <div class="position-relative h-100">
+                        <div class="card pb-3 mb-2">
+                            <img class=" w-100 h-100 rounded" data-wow-delay="0.9s" src="{% static 'assets/images/about2.png' %}" style="object-fit: cover;">
+                        </div>
+                        <!-- <div class="card pb-3">
+                            <img class=" w-100 h-100 rounded" data-wow-delay="0.9s" src="{% static 'assets/images/watphasing.png" style="object-fit: cover;">
+                        </div> -->
+                        
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="font-family-alt text-uppercase">Chiang Mai</h5>
+                        <h1 class="font-family-alt mb-0" style="color: #65131a; font-weight: 500;">How to travel to Chiang Mai.</h1>
+                    </div>
+                    <br/>
+                    <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;Chiang Mai International Airport features a single runway and terminal, serving as a crucial hub for airlines like Thai Airways and AirAsia. It acts as the primary gateway to northern Thailand, offering direct flights to various Asian destinations, including China, Japan, and South Korea, as well as domestic flights to Bangkok. The airport is also well-connected for travelers coming from other locations.</p>
+                    <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;International flights from Europe to Chiang Mai typically involve at least one layover in Asian air hubs such as Bangkok, Singapore, or Kuala Lumpur. Therefore, you will need to consider connecting flights to reach Chiang Mai from Europe.</p>
+                    <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;From North America, you will need to make a connection either in South Korea or Taiwan, and from Oceania, you need to go through Kuala Lumpur before heading to Chiang Mai.</p>
+                    <p class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;For most Asian countries (like Singapour, Vietnam, Japon, Corée du Sud, Hong Kong, Taiwan, Chine, Malaisie, Myanmar) you can find direct flights to Chiang Mai.</p>
+                </div>
+               
+            </div>
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //Section - About End -->
+
+   <!-- Section - Register Start -->
+   <section id="register" class="bg-cover bg-overlay-black-6">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-1 text-center">
+                    <img src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt="" style="width: 20rem;"/>
+                    <!-- <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 text-uppercase text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
+                        The Annual<br>
+                        Conference!
+                    </h2> -->
+
+                    <p class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-gray-light-2 xs-text-large text-extra-large text-uppercase" style="font-weight: 600;">
+                        14th International Conference on Road
+                        <br>and Airfield Pavement Technology 2025
+                        <br>16 - 18 July 2025
+                        <br>Chiang Mai Merriott Hotel
+                    </p>
+                    <a href="#page-top" class="page-scroll btn btn-base-color sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl" style="color: #eaaf51;">16 - 18 JULY 2025 CHIANG MAI MERRIOTT HOTEL</a>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- <div class="col-sm-6 col-md-7 xs-text-center">
+                <span class="display-block font-family-alt letter-spacing-1 opacity-9 margin-7 no-margin-bottom no-margin-rl text-white text-medium text-uppercase">Register Now and Guarantee Your Seat!</span>
+                <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-5 no-margin-bottom no-margin-rl text-white xs-title-medium title-extra-large-3 text-uppercase">Do you have an account ?<br>Register<br>Right Now!</h2>
+                <span class="bg-base-color display-inline-block margin-5-5 no-margin-rl separator-line-medium-thick-long"></span>
+            </div> -->
+            <!-- //.col-sm-6 -->
+            
+            <!-- <div class="col-sm-6 col-md-5">
+                <div class="form-wrapper border-round padding-8">
+                    <form action="contact/send_mail_ticket.php" method="post" id="form-register">
+                        <input type="text" placeholder="Your Name" name="name" class="required">
+                        <input type="text" placeholder="Your Email" name="email" class="required email">
+                        <div class="select-wrapper">
+                            <select id="ticket-type" name="ticket" class="required">
+                                <option value="">Choose Your Ticket Type</option>
+                                <option value="Student">Student</option>
+                                <option value="Educator">Educator</option>
+                                <option value="Professional">Professional</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                     
+                        <textarea placeholder="Your Message" name="message" class="required"></textarea>
+                        <button id="btn-form-register" type="submit" class="btn btn-base-color btn-medium">Book Now</button>
+                    </form>
+                </div>
+          
+            </div> -->
+         
+        </div>
+      
+    </div>
+
+</section>
+<!-- //Section - Register End -->
+
+<!-- Site footer -->
+<footer id="contact" class="site-footer">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 text-center">
+      <!-- <h6>ICPT2025</h6> -->
+      <img src="{% static 'assets/images/Logo/footerimage.svg' %}" alt="" style="width: 50rem;"/>
+      
+      <!-- <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p> -->
+    </div>
+    <div class="col-md-1">
+        <div class="vl"></div>
+    </div>
+   
+
+    <div class="col-xs-12 col-md-7">
+        <h6>Chiang Mai University</h6>
+        <h6>Advanced Railway Civil and Foundation Engineering Center</h6>
+      <ul class="footer-links">
+       
+        <li>Email: icpt-2025@cmu.ac.th</li>
+        <!-- <li>Phone: +029 999 9999</li> -->
+        <li>Give us a call or drop by anytime,
+            we endeavour to answer all enquiries
+            within 24 hours on business days.</li>
+        <li>We are open from 8.30 AM - 4.00 PM week days.</li>
+        <li>Organized by Chingmai University.</li>
+      </ul>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-strt">
+            <ul class="social-icons">
+              <li><a class="cmu" href="https://www.cmu.ac.th/"><img src="{% static 'assets/images/Logo/Chiang_Mai_University.svg.png' %}" alt=""/></a></li>
+              <!-- <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>    -->
+            </ul>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-sm-6 col-xs-12">
+      <p class="copyright-text">Copyright &copy; All Rights Reserved by 
+        2025 ICPT Conference.
+      </p>
+    </div>
+
+ 
+  </div>
+</div>
+</footer>
+    
+    
+    <!-- Scroll to top -->
+    <a href="#page-top" class="page-scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    
+    
+    
+    <!-- Scroll to top -->
+    <a href="#page-top" class="page-scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    
+    
+    <!-- Loading jQuery -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    
+    <!-- Loading Bootstrap JS -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    
+    <!-- Include all js plugins (below) -->
+    <script src="{% static 'assets/js/pace.min.js' %}"></script>
+    <script src="{% static 'assets/js/debouncer.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.inview.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.matchHeight.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/flickity.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    
+    <!-- BG Parallax JS -->
+    <script src="{% static 'assets/js/lib/greensock/TweenMax.min.js' %}"></script>
+    <script src="{% static 'assets/js/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'assets/js/animation.gsap.min.js' %}"></script>
+    
+    <!-- Loading Theme JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    
+</body>
+</html>

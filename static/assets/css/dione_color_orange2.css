@@ -1,0 +1,159 @@
+/*-------------------------------------*\
+    Color
+\*-------------------------------------*/
+
+/*
+* Heading style colors
+*/
+
+.title-underline-base-color {
+    border-color: #ffa84c;
+}
+.title-underline-thick-base-color {
+    border-color: #ffa84c;
+}
+.title-sideline-base-color:before {
+    background-color: #ffa84c;
+}
+.title-strikethrough-base-color:before {
+    background-color: #ffa84c;
+}
+
+
+/*
+* Text color
+*/
+
+.text-base-color {
+    color: #ffa84c !important;
+}
+
+
+/*
+* Text color (on hover)
+*/
+
+.text-hover-base-color:hover,
+.text-hover-base-color:focus {
+    color: #ffa84c !important;
+}
+
+
+/*
+* Background color
+*/
+
+.bg-base-color {
+    background-color: #ffa84c !important;
+}
+
+
+/*
+* Background color (on hover)
+*/
+
+.bg-hover-base-color:hover {
+    background-color: #ffa84c !important;
+}
+
+
+/*
+* Border color
+*/
+
+.border-base-color {
+    border-color: #ffa84c !important;
+}
+
+
+/*
+* Button colors
+*/
+
+.btn.btn-base-color {
+    background-color: #ffa84c;
+}
+.btn.btn-base-color.btn-hover-transparent:hover {
+    border-color: #ffa84c;
+    color: #ffa84c;
+}
+.btn.btn-outline-base-color {
+    border-color: #ffa84c;
+    color: #ffa84c;
+}
+.btn.btn-outline-base-color:hover {
+    background-color: #ffa84c;
+}
+.btn.btn-outline-base-color.btn-hover-transparent:hover,
+.btn.btn-outline-base-color.btn-hover-transparent:focus {
+    color: #ffa84c;
+}
+
+
+/*
+* Preloader color
+*/
+
+.pace .pace-progress {
+    background-color: #ffa84c;
+}
+
+
+/*
+* Nav tabs (Section - Schedule)
+*/
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: #ffa84c !important;
+}
+
+
+/*
+* Nav stacked (Section - FAQ)
+*/
+
+.nav.nav-pills.nav-stacked > li.active > a,
+.nav.nav-pills.nav-stacked > li.active > a:hover,
+.nav.nav-pills.nav-stacked > li.active > a:focus {
+    background-color: #ffa84c;
+    color: #ffffff;
+}
+
+
+/*
+* Accordions (Section - FAQ)
+*/
+
+.panel-group .panel.active .panel-heading {
+    background-color: #ffa84c;
+}
+
+
+/*
+* Countdown
+*/
+
+.countdown .clock-item {
+    background-color: #ffa84c;
+}
+
+
+/*
+* Pricing (Section - Ticket)
+*/
+
+.pricing ul > li.check-mark:before {
+    background-color: #ffa84c;
+}
+
+
+/*
+* Timeline (Section - Schedule)
+*/
+
+.timeline-item.highlight:before {
+    background-color: #ffa84c;
+    border: #ffa84c;
+}

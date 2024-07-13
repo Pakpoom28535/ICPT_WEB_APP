@@ -1,0 +1,64 @@
+{% extends "Client/base-dashboard.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-tasks"></i> View Submission</div>
+
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive  p-2">
+          <!-- Projects table -->
+          <table class="table table-head-bg-primary" id="T1">
+            <thead>
+              <tr>
+                <th scope="col">Submission ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Date / Time Submitted</th>
+                <th scope="col">File</th>
+                <th scope="col">Dicision Status</th>
+                <th scope="col">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for i in data %}
+              <tr>
+                <td>{{ i.Submission_Code }}</td> <!-- Adjust to match your ID field -->
+                <td> {{i.Submition_title}}</td> <!-- Example title field -->
+                <td>{{ i.created_at }}</td> <!-- Adjust to match your date field -->
+                <td><a href="/media/{{i.file}}" class="btn btn-success" download>Download</a></td>
+                <td>{{ i.comment }}</td> <!-- Adjust to match your status field -->
+
+                <td class="text-center">
+                  {% if i.status_review == True %}
+                  <span class="badge badge-success">Accept</span>
+                  {% elif i.status_review == False %}
+                  <span class="badge badge-danger">Reject</span>
+                  {% elif i.status_review == None %}
+                  <span class="badge badge-warning">Pending</span>
+                  {% endif %}
+
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $('#T1').DataTable({
+        "order": [[2, "desc"]] // This will order by the third column (index 2) in ascending order
+    });
+  });
+</script>
+
+{% endblock content%}

@@ -1,0 +1,213 @@
+{% extends "Client/StaffSection/Staff-base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div
+              class="icon-big text-center icon-primary bubble-shadow-small"
+            >
+            <i class="fas fa-user-tie"></i>
+             
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Regular Applicant</p>
+              <h4 class="card-title">{{qty_regular}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div
+              class="icon-big text-center icon-info bubble-shadow-small"
+            >
+            <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Student Applicant</p>
+              <h4 class="card-title">{{qty_student}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div
+              class="icon-big text-center icon-success bubble-shadow-small"
+            >
+            <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Visitor</p>
+              <h4 class="card-title">{{qty_visitor}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div
+              class="icon-big text-center icon-secondary bubble-shadow-small"
+            >
+            <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Total</p>
+              <h4 class="card-title">{{qty_total}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="far fa-bell"></i> Important Dates</div>
+        
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <!-- Projects table -->
+          <table class="table align-items-center mb-0">
+         
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Abstract due
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Full paper due
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Acceptance of full paper
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Final full paper due
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Paper Reviews
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Paper Revisions
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Final Decisions
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Registration Open
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <button
+                    class="btn btn-icon btn-round btn-success btn-sm me-2"
+                  >
+                    <i class="fa fa-check"></i>
+                  </button>
+                  Early-bird Registration
+                </th>
+                <td class="text-end">Mar 19, 2020, 2.45pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock content%}

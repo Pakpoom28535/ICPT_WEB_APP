@@ -1,0 +1,531 @@
+{% extends "Client/StaffSection/Staff-base.html" %}
+{% block content %}
+{% load static %}
+</script>
+
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div class="icon-big text-center icon-primary bubble-shadow-small">
+              <i class="fas fa-user-tie"></i>
+
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Regular Applicant</p>
+              <h4 class="card-title">{{qty_regular}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div class="icon-big text-center icon-info bubble-shadow-small">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Abstact Submition</p>
+              <h4 class="card-title">{{qty_student}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div class="icon-big text-center icon-success bubble-shadow-small">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Fullpaper Submition</p>
+              <h4 class="card-title">{{qty_visitor}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="card card-stats card-round">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-icon">
+            <div class="icon-big text-center icon-secondary bubble-shadow-small">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="col col-stats ms-3 ms-sm-0">
+            <div class="numbers">
+              <p class="card-category">Payment Complete</p>
+              <h4 class="card-title">{{Payment_qty}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-users"></i> Applicant List</div>
+
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table id="T1" class="display table table-striped table-hover table-head-bg-primary">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Register Type</th>
+                  <th>Abstract</th>
+                  <th>Full Paper</th>
+                  <th>Paper Reviews</th>
+                  <th>Paper Revision</th>
+                  <th>Final Decision</th>
+                  <th>Payment</th>
+                  <th>Option</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Name</th>
+                  <th>Register Type</th>
+                  <th>Abstract</th>
+                  <th>Full Paper</th>
+                  <th>Paper Reviews</th>
+                  <th>Paper Revision</th>
+                  <th>Final Decision</th>
+                  <th>Payment</th>
+                  <th>Option</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                {% for user_id, data in user_reviews.items %}
+                <tr class="text-center">
+                  <td>{{ data.userinfo.first_name }} {{ data.userinfo.last_name }}</td>
+                  <td>{{ data.userinfo.userprofile.User_type }}</td>
+                  <td>
+                    {% if data.review.0.Review_status %}
+                    <i class="fas fa-check-circle" style="color: green;"></i>
+                    {% else %}
+                    <i class="far fa-circle" style="color: red;"></i> <!-- Or any other icon or style for false case -->
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if data.review.1.Review_status %}
+                    <i class="fas fa-check-circle" style="color: green;"></i>
+                    {% else %}
+                    <i class="far fa-circle" style="color: red;"></i> <!-- Or any other icon or style for false case -->
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if data.review.2.Review_status %}
+                    <i class="fas fa-check-circle" style="color: green;"></i>
+                    {% else %}
+                    <i class="far fa-circle" style="color: red;"></i> <!-- Or any other icon or style for false case -->
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if data.review.3.Review_status %}
+                    <i class="fas fa-check-circle" style="color: green;"></i>
+                    {% else %}
+                    <i class="far fa-circle" style="color: red;"></i> <!-- Or any other icon or style for false case -->
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if data.review.4.Review_status %}
+                    <i class="fas fa-check-circle" style="color: green;"></i>
+                    {% else %}
+                    <i class="far fa-circle" style="color: red;"></i> <!-- Or any other icon or style for false case -->
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if data.review.5.Review_status %}
+                    <i class="fas fa-check-circle" style="color: green;"></i>
+                    {% else %}
+                    <i class="far fa-circle" style="color: red;"></i> <!-- Or any other icon or style for false case -->
+                    {% endif %}
+                  </td>
+
+
+                  <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      onclick="showdata({{data.userinfo.id}})">
+                      Update
+                    </button>
+                  </td>
+                </tr>
+                {% endfor %}
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade " id="myModal" data-bs-backdrop="false"  data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1030;" stype="bord:1px;">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" >
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title" id="staticBackdropLabel">Applicant Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mt-2 mb-2"><h5>Code_ID: <span id="code_id"></span></h5></div>
+            <div class="col-md-4 mt-2 mb-2">
+              <ul>
+                <li>Name: <span id="name"></span></li>
+                <li>Phone: <span id="Phone"></span></li>
+                <li>Fax: <span id="Fax"></span></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+              <ul>
+                <li>Research Field: <span id="Research"></span></li>
+                <li>Institution: <span id="Institution"></span></li>
+                <li>Address: <span id="Address"></span></li>
+              </ul>
+            </div>
+
+            <div class="col-md-12 mt-2 mb-2">
+              <p style="font-weight: bold;">Progress Status</p>
+              <table class="table table-striped mt-3 table-head-bg-info">
+                <thead>
+                  <tr class="text-center">
+                    <th scope="col">Abstract</th>
+                    <th scope="col">Full Paper</th>
+                    <th scope="col">Paper Reviews</th>
+                    <th scope="col">Paper Revision</th>
+                    <th scope="col">Final Decision</th>
+                    <th scope="col" hidden>Payment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">
+                      <div class="btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="step1" autocomplete="off">
+                        <label class="btn btn-outline-success" for="step1">Checked</label>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="step2" autocomplete="off">
+                        <label class="btn btn-outline-success" for="step2">Checked</label>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="step3" autocomplete="off">
+                        <label class="btn btn-outline-success" for="step3">Checked</label>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="step4" autocomplete="off">
+                        <label class="btn btn-outline-success" for="step4">Checked</label>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="step5" autocomplete="off">
+                        <label class="btn btn-outline-success" for="step5">Checked</label>
+                      </div>
+                    </td>
+                    <td class="text-center" hidden>
+                      <div class="btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="step6" autocomplete="off">
+                        <label class="btn btn-outline-success" for="step6">Checked</label>
+                      </div>
+                    </td>
+
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+            <!-- <div class="col-md-12 mt-2 mb-2">
+              <p style="font-weight: bold;">Payment Status</p>
+              <table class="table table-striped mt-3 table-head-bg-black">
+                <thead>
+                  <tr>
+                    <th scope="col">Register Type</th>
+                    <th scope="col">Amount Paid</th>
+                    <th scope="col">Ref no.</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Transaction Time</th>
+                    <th scope="col">Slip</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>regular</td>
+                    <td>฿ 14,000</td>
+                    <td>N00012</td>
+                    <td>2024/03/04</td>
+                    <td>23:00</td>
+                    <td><button class="btn btn-info">Download</button></td>
+                  </tr>
+  
+  
+                </tbody>
+              </table>
+            </div> -->
+            <div class="col-md-12 mt-2 mb-2">
+              <p style="font-weight: bold;">Submition Status</p>
+              <table id="T2"class="table table-striped mt-3 table-head-bg-primary">
+                <thead>
+                  <tr>
+                    <th scope="col">SUBMISSION ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Comment</th>
+
+                    <th scope="col">Date-Time Submitted</th>
+                    <th scope="col">Paper</th>
+                    <th scope="col">Decision</th>
+
+                  </tr>
+                </thead>
+                <tbody id="mytable">
+                  <!-- Rows will be appended here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+  var Step_list;
+  var Submition_list
+  function clear_data() {
+    $('#code_id').text('');
+    $('#name').text('');
+    $('#Phone').text('');
+    $('#Fax').text('');
+    $('#Research').text('');
+    $('#Institution').text('');
+    $('#Address').text('');
+    for (var i = 1; i < 8; i++) {
+      $('#step' + i).prop('checked', false);
+    }
+  }
+
+  var Regular_edit = 0;
+  function showdata(id) {
+    clear_data();
+    console.log(id);
+    Regular_edit = id;
+    $('#myModal').modal('show', {backdrop: false});
+    $.ajax({
+      url: '/Applicant-List',
+      method: 'GET',
+      data: {
+        action: 1,
+        id: id,
+      },
+      success: function (response) {
+        // Handle the server response here (e.g., display a message).
+        console.log(response);
+        Step_list = response.abstact;
+        Submition_list = response.sumbition;
+        $('#code_id').text(response.detial[0].codeno);
+        $('#name').text(response.info[0].first_name + ' ' + response.info[0].last_name);
+        $('#Phone').text(response.detial[0].phone);
+        $('#Fax').text(response.detial[0].fax);
+        $('#Research').text(response.detial[0].research_field);
+        $('#Institution').text(response.detial[0].institution);
+        $('#Address').text(response.detial[0].address + ' ' + response.detial[0].city + ' ' + response.detial[0].state_province);
+        response.abstact.forEach(element => {
+          if (element.Review_status) {
+            $('#step' + element.StateReview_id).prop('checked', true);
+          }
+        });
+        $('#mytable').empty();
+        response.sumbition.forEach(function (item) {
+          var row = `
+                    <tr>
+                           <td>${item.Submission_Code}</td>
+                        <td>${item.Submition_title}</td>
+                        <td>${item.comment}</td>
+                        <td>${new Date(item.created_at).toLocaleString()}</td>
+                        <td><a href="/media/${item.file}" class="btn btn-success" download>Download</a></td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions${item.Review_User_History_id}" onclick="change_status_submit(${item.Review_User_History_id}, this.value)"  id="accept-abstract${item.Review_User_History_id}" value="true" ${item.status_review ? 'checked' : ''}>
+                                <label class="form-check-label" for="accept-abstract${item.Review_User_History_id}"><span style="color: green; font-weight: bold;">Accept</span></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions${item.Review_User_History_id}"  onclick="change_status_submit(${item.Review_User_History_id}, this.value)"  id="reject-abstract${item.Review_User_History_id}" value="false" ${!item.status_review ? 'checked' : ''}>
+                                <label class="form-check-label" for="reject-abstract${item.Review_User_History_id}"><span style="color: red; font-weight: bold;">Reject</span></label>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+          $('#mytable').append(row);
+
+        })
+        $('#T2').DataTable({
+        "order": [[3, "desc"]] // This will order by the third column (index 2) in ascending order
+    });
+      }
+    });
+  }
+  function change_status_review(id,status) {
+    $.ajax({
+      url: '/Applicant-List',
+      type: 'POST',
+      data: {
+        'User_code': $('#code_id').text(),
+        'step_id': id,
+        'status': status,
+        'csrfmiddlewaretoken': '{{ csrf_token }}'
+      },
+      success: function (response) {
+       console.log(response);
+      },
+      error: function (xhr, status, error) {
+        alert('Error: ' + error);
+      }
+    });
+  }
+  function change_status(id,status) {
+    $.ajax({
+      url: '/Applicant-List',
+      type: 'POST',
+      data: {
+        action : '1',
+        'User_code': $('#code_id').text(),
+        'step_id': id,
+        'status': status,
+        'csrfmiddlewaretoken': '{{ csrf_token }}'
+      },
+      success: function (response) {
+       console.log(response);
+      },
+      error: function (xhr, status, error) {
+        alert('Error: ' + error);
+      }
+    });
+  }
+  function change_status_submit(reviewUserHistoryId, value){
+    console.log("Radio button clicked:", reviewUserHistoryId, value);
+       $.ajax({
+        url: '/Applicant-List',
+        method: 'POST',
+        data: {
+            action : '2',
+            reviewUserHistoryId: reviewUserHistoryId,
+            value: value,
+            'csrfmiddlewaretoken': '{{ csrf_token }}'
+        },
+        success: function(response) {
+          alert("success","เปลี่ยนสถาณะสำเร็จ","ระบบได้ทำการปรับสถาณะเรียบร้อยแล้ว");
+        },
+        error: function(error) {
+          alert("error","ไม่สามารถปรับสถาณะได้","โปรดติดต่ดแอดมินดูแลระบบ");
+        }
+    });
+  }
+ 
+  $(document).ready(function () {
+
+    $('#T1').DataTable();
+
+    $('#myModal').on('hidden.bs.modal', function () {
+     window.location.reload();
+    });
+    $('#step1').change(function () {
+      if ($(this).is(':checked')) {
+        change_status(1,true);
+      }else{
+        change_status(1,false);
+      }
+      alert("success","เปลี่ยนสถาณะสำเร็จ","ระบบได้ทำการปรับสถาณะเรียบร้อยแล้ว")
+    
+    });
+    $('#step2').change(function () {
+      if ($(this).is(':checked')) {
+        change_status(2,true);
+      }else{
+        change_status(2,false);
+      }
+      alert("success","เปลี่ยนสถาณะสำเร็จ","ระบบได้ทำการปรับสถาณะเรียบร้อยแล้ว")
+    });
+    $('#step3').change(function () {
+      if ($(this).is(':checked')) {
+        change_status(3,true);
+      }else{
+        change_status(3,false);
+      }
+      alert("success","เปลี่ยนสถาณะสำเร็จ","ระบบได้ทำการปรับสถาณะเรียบร้อยแล้ว")
+    });
+    $('#step4').change(function () {
+      if ($(this).is(':checked')) {
+        change_status(4,true);
+      }else{
+        change_status(4,false);
+      }
+      alert("success","เปลี่ยนสถาณะสำเร็จ","ระบบได้ทำการปรับสถาณะเรียบร้อยแล้ว")
+    });
+    $('#step5').change(function () {
+      if ($(this).is(':checked')) {
+        change_status(5,true);
+      }else{
+        change_status(5,false);
+      }
+      alert("success","เปลี่ยนสถาณะสำเร็จ","ระบบได้ทำการปรับสถาณะเรียบร้อยแล้ว")
+    });
+    $('#step6').change(function () {
+      if ($(this).is(':checked')) {
+        change_status(6,true);
+      }else{
+        change_status(6,false);
+      }
+      alert("success","เปลี่ยนสถาณะสำเร็จ","ระบบได้ทำการปรับสถาณะเรียบร้อยแล้ว")
+    });
+  });
+
+</script>
+
+
+{% endblock content%}

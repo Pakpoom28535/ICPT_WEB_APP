@@ -1,0 +1,83 @@
+{% extends "Client/base-dashboard.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-hotel"></i> Hotels Suggestion</div>
+        
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12 mt-4 mb-4">
+              <p>Here is some suggestion nearby hotel for the event..</p>
+          </div>
+          <div class="col-md-6 mt-3 mb-4 text-center">
+              <img src="{% static 'assets/images/mariothotel.jpg' %}" alt="" style="width: 100%;"/>
+          </div>
+          <div class="col-md-6 mt-3 mb-4">
+              <p style="font-weight: bold;">Chiang Mai Marriott Hotel <span class="badge badge-success">5 <i class="far fa-star"></i></span></p>
+              <p style="font-weight: bold;">LOCATION</p>
+              <ul>
+                  <li>108 Chang Klan Road, Tambol Chang Klan, Amphur Muang, Chiang Mai, Thailand, 50100</li>
+              </ul>
+              <p style="font-weight: bold;">HOTEL INFO</p>
+              <ul>
+                  <li>Check In: 3:00 pm</li>
+                  <li>Check Out: 12:00 pm</li>
+                  <li>Minimum Age to Check In: 18</li>
+                  <li>Smoke Free Property</li>
+                  <li>Pet Not Allowed (Regrettably pets are not allowed in the hotel)</li>
+                  <li>Parking (Complimentary On-Site Parking)</li>
+                  <li>Off-Site Parking (Night Bazaar parking Lot 0.1 KM)</li>
+              </ul>
+             
+              <a href="https://www.marriott.com/en-us/hotels/cnxmc-chiang-mai-marriott-hotel/overview/" target="_blank" class="btn" style="background-color: #65131a; color: #fff;">Hotel Information</a>
+          </div>
+          <div class="col-md-12 mt-3 mb-3"></div>
+          <div class="col-md-6 mt-3 mb-4">
+              <div class="row">
+                  <div class="col-12">
+                      <p style="font-weight: bold;">Duangtawan Hotel Chiang Mai <span class="badge badge-success"> 4 <i class="far fa-star"></i></span></p>
+                  </div>
+                  <div class="col-12 mt-1 mb-3 text-center">
+                      
+                      <img src="{% static 'assets/images/duangtawan.jpg' %}" width="85%" alt=""/>
+                  </div>
+                  <div class="col-12 mt-3 mb-3">
+                      <p style="font-weight: bold;">LOCATION</p>
+                      <ul>
+                          <li>132 Loi Kroh Road, Tambon Chang Khlan, Mueang Chiang Mai District, Chiang Mai 50100</li>
+                      </ul>
+                      <a href="https://www.duangtawanhotelchiangmai.com/" target="_blank" class="btn" style="background-color: #65131a; color: #fff;">Hotel Information</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 mt-3 mb-4">
+              <div class="row">
+                  <div class="col-12">
+                      <p style="font-weight: bold;">Movenpick Suriwongse Chiang Mai<span class="badge badge-success"> 4 <i class="far fa-star"></i></span></p>
+                  </div>
+                  <div class="col-12 mt-1 mb-3 text-center">
+                      <img src="{% static 'assets/images/moverick.jpg' %}" width="60%"  alt=""/>
+                  </div>
+                  <div class="col-12 mt-3 mb-3">
+                      <p style="font-weight: bold;">LOCATION</p>
+                      <ul>
+                          <li>110 chang khlan Rd, Tambon Chang Khlan, Mueang Chiang Mai District, Chiang Mai 50100</li>
+                      </ul>
+                      <a href="https://movenpick.accor.com/th/asia/thailand/chiang-mai/movenpick-suriwongse-hotel-chiang-mai.html" target="_blank" class="btn" style="background-color: #65131a; color: #fff;">Hotel Information</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock content%}

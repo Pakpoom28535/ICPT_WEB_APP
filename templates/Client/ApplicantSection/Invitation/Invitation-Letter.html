@@ -1,0 +1,132 @@
+{% extends "Client/base-dashboard.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-round">
+      <div class="card-header" style="background-color: #65131a;">
+        <div class="card-head-row card-tools-still-right">
+          <div class="card-title" style="color: #fff;"><i class="fas fa-envelope"></i> Invitation Letter</div>
+        
+        </div>
+      </div>
+      <div class="card-body">
+          <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4">
+                          <div class="form-group">
+                              <label for="exampleFormControlSelect1">Select Title</label>
+                              <select class="form-select" id="exampleFormControlSelect1">
+                                  <option value="" disabled selected>Please select a Title</option>
+                                <option value="mr">Mr.</option>
+                                <option value="mrs">Mrs.</option>
+                                <option value="ms">Ms.</option>
+                                <option value="dr">Dr.</option>
+                                <option value="prof">Prof.</option>
+                              </select>
+                            </div>
+                        <div class="form-group">
+                          <label for="firstname">First Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="firstname"
+                            placeholder="Enter Firstname"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="firstname">Middle Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="midname"
+                            placeholder="Enter Middle name"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="lastname">Last Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="lastname"
+                            placeholder="Enter Last name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4">
+                         
+                          <div class="form-group">
+                            <label for="passport">Passport Number</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="passport"
+                              placeholder="Enter Passport Number"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="dob"
+                              placeholder="Enter Date of Birth"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="Institution">Institution</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Institution"
+                              placeholder="Enter Institution"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="text">Address</label>
+                            <textarea class="form-control" id="address" rows="5">
+                            </textarea>
+                          </div>
+                    
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                         
+                         
+                          <div class="form-group">
+                            <label for="papertitle">Paper Title</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="papertitle"
+                              placeholder="Enter Paper Title"
+                            />
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Email</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="Enter Email"
+                              />
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card-action text-center">
+                    <button  class="btn btn-success">Generate Report  <i class="fas fa-envelope-square"></i></button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+       
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock content%}
