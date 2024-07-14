@@ -38,7 +38,11 @@ SESSION_COOKIE_SECURE = True  # Use if you're using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Application definition
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.mydomain.com',
+    'https://*.127.0.0.1',
+    'https://icpt-2025.eng.cmu.ac.th',
+]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
