@@ -18,15 +18,54 @@ from django.core import serializers
 import random
 import string
 import json
-def email(request):
-    subject = 'Thank you for registering to our site'
-    message = ' it  means a world to us '
-    email_from = settings.EMAIL_HOST_USER
-    html_mail = '<h1>{{ subject }}</h1>'+'<p>{{ message }}</p>'+'<p>Thank you!</p>'
-    recipient_list = ['delete_231@hotmail.com',]
-    send_mail( subject, message, email_from, recipient_list,html_message=html_mail )
-    return JsonResponse({"data":'ok'},status=HTTPStatus.OK)
 
+import threading
+def sendmail(name,mail,username,password,code):
+    subject = 'Thank you for registering to our site'
+    message = 'It means the world to us.'
+    email_from = settings.EMAIL_HOST_USER
+    html_mail = f'''
+            <p class="greeting">Dear {name},</p>
+            <p>We are pleased to inform you that your account on our website has been successfully created. Below are your login credentials:</p>
+            <div class="credentials">
+                <p><strong>CodeID:</strong> {code}</p>
+                <p><strong>Username:</strong> {username}</p>
+                <p><strong>Password:</strong> {password}</p>
+            </div>
+            <p>To log in, please visit our website at <a href="https://icpt-2025.eng.cmu.ac.th/">https://icpt-2025.eng.cmu.ac.th/</a> and enter your credentials.</p>
+            <p>For security purposes, we recommend changing your password upon your first login. You can do this by navigating to the account settings section once you are logged in.</p>
+            <p>If you encounter any issues or have any questions, please do not hesitate to contact our support team at <a href="mailto:icpt-2025@cmu.ac.th">icpt-2025@cmu.ac.th</a>.</p>
+            <p>Thank you for choosing our services.</p>
+            <div class="signature">
+                <p>Best regards,</p>
+                <p>CHIANG MAI UNIVERSITY<br>
+                ADVANCED RAILWAY CIVIL AND FOUNDATION ENGINEERING CENTER<br>icpt-2025@cmu.ac.th</p>
+            </div>
+    '''
+    recipient_list = [mail,]
+    send_mail(subject, message, email_from, recipient_list, html_message=html_mail)
+    return JsonResponse({"data": 'ok'}, status=HTTPStatus.OK)
+def send_reset_email(email, new_password):
+    subject = 'Password Reset Request'
+    message = f'Your new password is: {new_password}'
+    email_from = settings.EMAIL_HOST_USER
+    html_mail = f'''
+            <p class="greeting">Dear User,</p>
+            <p>We have reset your password as per your request. Below is your new password:</p>
+            <div class="credentials">
+                <p><strong>New Password:</strong> {new_password}</p>
+            </div>
+            <p>Please log in using your new password and change it to something more secure at your earliest convenience.</p>
+            <p>If you encounter any issues or have any questions, please do not hesitate to contact our support team.</p>
+            <div class="signature">
+                <p>Best regards,</p>
+                <p>CHIANG MAI UNIVERSITY<br>
+                ADVANCED RAILWAY CIVIL AND FOUNDATION ENGINEERING CENTER<br>icpt-2025@cmu.ac.th</p>
+            </div>
+    '''
+    recipient_list = [email,]
+    send_mail(subject, message, email_from, recipient_list, html_message=html_mail)
+    return JsonResponse({"data": 'ok'}, status=HTTPStatus.OK)
 def generate_random_code():
     # กำหนดความยาวของส่วนตัวอักษร
     text_length = 5
@@ -153,8 +192,14 @@ def ApplicantList(request):
         if data['action'] == '1':
                 # Example query to filter StateReview_User based on UserProfile's codeno field
             StateReview_User_ = StateReview_User.objects.get(user__userprofile__codeno=data['User_code'],StateReview__step = data['step_id'])
-
-        
+            if data['step_id'] == '6':
+                userprofile = UserProfile.objects.get(user__id = StateReview_User_.user.id)
+                if data['status'] == 'true':
+                    userprofile.paymet_status = True
+                   
+                else:
+                    userprofile.paymet_status = False
+                userprofile.save()
             if data['status'] == 'true':
                 print(1)
                 StateReview_User_.Review_status = True
@@ -196,6 +241,8 @@ def ApplicantList(request):
                         all_user = User.objects.filter(is_staff=False,groups__id=1)
                         qty_total = all_user.count()
                         paymet = all_user.filter(userprofile__paymet_status = True).count()
+                        abssubmit = StateReview_User.objects.filter(Review_status = True,StateReview__step = 1).count()
+                        fullsubmit = StateReview_User.objects.filter(Review_status = True,StateReview__step = 2).count()
                         step_review_list = StateReview_User.objects.all()
                         list_user_ids = all_user
                         res = {}
@@ -207,7 +254,7 @@ def ApplicantList(request):
                                 'userinfo': user_data,
                             }
                         print(res)
-                        return render(request, "Client/StaffSection/Applicant-List.html",{'user_reviews': res,'qty_regular':qty_total,'Payment_qty':paymet})
+                        return render(request, "Client/StaffSection/Applicant-List.html",{'user_reviews': res,'qty_regular':qty_total,'qty_ab':abssubmit,'qty_full':fullsubmit,'Payment_qty':paymet})
     else:
         return redirect('signin') 
 def VisitorList(request):
@@ -291,7 +338,8 @@ def Register(request):
             )
             new_stateReview_user.save()
         ############## SEND MAIL USERPASSWORD ######################
-        
+        thread = threading.Thread(target=sendmail, args=(first_name+' '+last_name,email,username,password,code))
+        thread.start()
         return JsonResponse({"data":'ok',"res":'save complete'},status=HTTPStatus.OK)
     else: 
         Group_llist  = Group.objects.all()
@@ -328,7 +376,26 @@ def signin(request):
     else:
         return render(request, "Client/Login.html")
 def Forgot(request):
-    return render(request, "Client/Forgot.html")
+    if request.method == 'POST':
+        email = request.POST['email']
+        try:
+            account = User.objects.get(username=email)
+            new_password = generate_password()
+            account.set_password(new_password)
+            account.save()
+            
+            # Start a new thread to send the reset email
+            thread = threading.Thread(target=send_reset_email, args=(email, new_password))
+            thread.start()
+
+            messages.success(request, "A new password has been sent to your email.")
+        except User.DoesNotExist:
+            messages.error(request, "Username not found!")
+        
+        return redirect('Forgot')
+
+    else:
+        return render(request, "Client/Forgot.html")
 def home(request):
     if request.user.is_authenticated:
         print("login true")

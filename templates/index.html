@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <title>ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025</title>
     <meta name="description" content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025"/>
-    <meta name="keywords" content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025"/>
+    <meta name="keywords" content="ICPT, ICPT2025, Pavement conference, Civil engineering international, conference, Road international conference"/>
+    <meta name="robots" content="ICPT, ICPT2025, Pavement conference, Civil engineering international, conference, Road international conference">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <!-- Loading Bootstrap CSS -->
     <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
     
@@ -32,12 +32,66 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .swal-wide{
+    width:850px !important;
+}
     </style>
-    
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 8]>
-
-    <![endif]-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                // title: "<strong>HTML <u>example</u></strong>",
+                // icon: "info",
+                html: `
+                
+                            <div class="card" style="background-color: #63151b; padding: 5rem; color: #fff;">
+                                <div class="card-body text-center">
+                                     <div class="col-md-12 mb-2">
+                                        <img src="{% static 'assets/images/Logo/ICPT2025top.svg' %}" alt="ICPT2025" style="width: 35rem;" />
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Abstracts submission</span>
+                                            <p style="font-weight: 600;">1 August 2024 - 31 October 2024</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of abstracts</span>
+                                            <p style="font-weight: 600;">15 November 2024</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Paper submission</span>
+                                            <p style="font-weight: 600;">16 November 2024 - 15 February 2025</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of papers</span>
+                                            <p style="font-weight: 600;">30 April 2025</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Early Bird Registration</span>
+                                            <p style="font-weight: 600;">By 1 November 2024</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #fff;">The next update is scheduled for release in August 2024</span>
+                                            <!-- <p style="font-weight: 600;"> June 2024</p> -->
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                       
+                `,
+                showCloseButton: true,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: false,
+                customClass: 'swal-wide',
+                cancelButtonText: `
+                    <i class="fa fa-thumbs-down"></i>
+                `,
+                cancelButtonAriaLabel: "Thumbs down"
+                });
+        });
+      </script>
 </head>
 <body id="page-top">
     <!--[if lt IE 8]>
@@ -57,7 +111,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand page-scroll font-family-alt letter-spacing-1 text-extra-large text-uppercase" href="/">
-                        <img src="{% static 'assets/images/Logo/ICPT2025top.svg' %}" alt=""/>
+                        <img src="{% static 'assets/images/Logo/ICPT2025top.svg' %}" alt="ICPT2025"/>
                         <!-- <h5 class="brand-icons" style=" font-weight: 800; font-style: italic; color: #fff;">ICPT 2025  </h5> -->
                     </a>
                 </div>
@@ -99,7 +153,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center">
-                            <img class="center-logo" src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt=""/>
+                            <img class="center-logo" src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt="ICPT2025"/>
                             <!-- <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 text-uppercase text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
                                 The Annual<br>
                                 Conference!
@@ -123,84 +177,6 @@
         </div>
         
     </section>
-    <!-- //Section - Home End -->
-    
-    
-    
-    <!-- Intro Start -->
-    <!-- <div id="intro" class="bg-white overflow-hidden position-relative width-100">
-        <div class="container-fluid no-padding">
-            <div class="row no-padding-rl xs-padding-6 padding-4">
-                <div class="col-md-12 text-center">
-                    <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">14TH INTERNATIONAL CONFERENCE ON ROAD</span>
-                    <span class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-1 no-margin-bottom text-gray-dark-2 text-uppercase xs-text-extra-large title-large">What You'll Discover at ICPT 2025</span>
-                </div>
-
-            </div>
-
-            <div class="row">
-         
-                <div class="features-box col-md-4 no-padding text-center">
-                    <div class="bg-cover bg-overlay-black-4 overflow-hidden position-relative">
-                        <div class="height-100 position-absolute position-top position-left width-100">
-                            <div class="display-table height-100 width-100">
-                                <div class="display-table-cell text-center vertical-align-middle">
-                                    <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Choose From Over 20 Sessions</span>
-                                </div>
-                 
-                            </div>
-                       
-                        </div>
-              
-                    </div>
-                
-                </div>
-      
-                <div class="features-box col-md-4 no-padding text-center">
-                    <div class="bg-cover bg-overlay-black-4 overflow-hidden position-relative">
-                        <div class="height-100 position-absolute position-top position-left width-100">
-                            <div class="display-table height-100 width-100">
-                                <div class="display-table-cell text-center vertical-align-middle">
-                                    <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Enjoy The After Party</span>
-                                </div>
-               
-                            </div>
-                
-                        </div>
-              
-                    </div>
-              
-                </div>
-            
-                <div class="features-box col-md-4 no-padding text-center">
-                    <div class="bg-cover bg-overlay-black-4 overflow-hidden position-relative">
-                        <div class="height-100 position-absolute position-top position-left width-100">
-                            <div class="display-table height-100 width-100">
-                                <div class="display-table-cell text-center vertical-align-middle">
-                                    <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Experiences Only at Dione</span>
-                                </div>
-                    
-                            </div>
-                 
-                        </div>
-           
-                    </div>
-           
-                </div>
-    
-            </div>
-
-            
-            <div class="row border-bottom no-padding-rl sm-padding-6 padding-2">
-                <div class="col-md-12 text-center">
-                    <span class="display-inline-block font-family-alt text-medium text-gray-dark-2">Special early bird offers on the first 50 tickets sold - <span class="text-base-color">This week only</span>.</span>
-                </div>
-           
-            </div>
-  
-        </div>
-
-    </div> -->
 
     <section class="bg-fimage">
         <div class="row no-padding-rl no-padding-top padding-1">
@@ -216,7 +192,7 @@
                 <div class="container" style="background-color: #fff; padding-top: 3rem; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 text-center">
-                            <img src="{% static 'assets/images/DrFaaa.png' %}" alt="" style="width: 32rem;"/>
+                            <img src="{% static 'assets/images/DrFaaa.png' %}" alt="ICPT2025" style="width: 32rem;"/>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <!-- <h2 class="font-family-alt sm-title-large title-extra-large-2 text-gray-dark-2">Chiang Mai</h2>
@@ -267,30 +243,30 @@
                                 <div class="row">
                                     <div class="col-md-6 pb-3">
                                         <ul>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Mechanistic-Empirical Pavement Design</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Low-carbon Materials in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Artificial Intelligence (AI) in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Life Cycle Assessment in Road and Airfield Construction</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Life Cycle Cost Analysis in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Transportation Infrastructure Resilience</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Pavement Monitoring and Sensors</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Environmental Management in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Waste Management for Pavement Construction</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Mechanistic-Empirical Pavement Design</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Low-carbon Materials in Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Artificial Intelligence (AI) in Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Life Cycle Assessment in Road and Airfield Construction</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Life Cycle Cost Analysis in Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Transportation Infrastructure Resilience</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Monitoring and Sensors</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Environmental Management in Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Waste Management for Pavement Construction</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6 pb-3">
                                         <ul>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Environmental Management in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Waste Management for Pavement Construction</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Pavement and Transportation Safety</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Law and Enforcement Related to Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Pavement Evaluation and Performance</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Pavement Maintenance and Rehabilitation Techniques</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Pavement Materials Characterization</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>GIS Application for Pavement</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Environmental Management in Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Waste Management for Pavement Construction</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement and Transportation Safety</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Law and Enforcement Related to Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Evaluation and Performance</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Maintenance and Rehabilitation Techniques</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Materials Characterization</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>GIS Application for Pavement</li>
                                             
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Climate Change Adaptation in Transportation and Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="" width="20px;"/>Other topics related to Pavement Engineering </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Climate Change Adaptation in Transportation and Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Other topics related to Pavement Engineering </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -335,30 +311,53 @@
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="card" style="background-color: #63151b; padding: 5rem; color: #fff;">
-                                <div class="card-body text-center">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Call for abstracts</span>
-                                            <p style="font-weight: 600;">1st April 2024 to 31st May  2024</p>
+                                <div class="card-body">
+                                    <div class="container" style="background-color: #fff; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <!-- <h2 class="font-family-alt sm-title-large title-extra-large-2 text-gray-dark-2">Chiang Mai</h2>
+                                                <span class="bg-base-color margin-6-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span> -->
+                                                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">The International Committee on Pavement Technology (ICPT)</span> is a non-profit non-governmental organization hosted by the Centre for Transportation Research of the National University of Singapore. The ICPT was established in 1992 under an agreement between the Centre for Transportation Research, National University of Singapore, and the Pavement Engineering Society (Singapore). The permanent secretariat of the ICPT is hosted by the Centre for Transportation Research, National University of Singapore. The first ICPT conference was held in Singapore in 1993 as a Southeast Asian regional event focusing on pavement construction and maintenance technology.</p>
+                                                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It was the success and positive experience of the first conference that led to the decision to launch the ICPT series of international conferences, formally known as the International Conference on Road & Airfield Pavement Technology. Subsequent ICPT conferences were held in Singapore (1995), Beijing (1998), Kunming, China (2000), Seoul (2005), Sapporo, Japan (2008), Bangkok (2011), Taiwan (2013), Dalian, China (2015), Hongkong (2017), Kuala Lumpur (2019), Sri Lanka (2021), Beijing (2023).</p>
+                                                <br/>
+                                              
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="card" style="background-color: #63151b; padding: 5rem; color: #fff;">
+                                                    <div class="card-body text-center">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Abstracts submission</span>
+                                                                <p style="font-weight: 600;">1 August 2024 - 31 October 2024</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of abstracts</span>
+                                                                <p style="font-weight: 600;">15 November 2024</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Paper submission</span>
+                                                                <p style="font-weight: 600;">16 November 2024 - 15 February 2025</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of papers</span>
+                                                                <p style="font-weight: 600;">30 April 2025</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Early Bird Registration</span>
+                                                                <p style="font-weight: 600;">By 1 November 2024</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #fff;">The next update is scheduled for release in August 2024</span>
+                                                                <!-- <p style="font-weight: 600;"> June 2024</p> -->
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-12">
-                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of Abstracts</span>
-                                            <p style="font-weight: 600;">1st June 2024</p>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Paper Submission</span>
-                                            <p style="font-weight: 600;">1st July 2024 to 31st October 2024</p>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of Papers</span>
-                                            <p style="font-weight: 600;">28th February 2025</p>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Early Bird Registration</span>
-                                            <p style="font-weight: 600;">1st June 2024 to 31st December 2024</p>
-                                        </div>
+                                        
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -510,7 +509,7 @@
                 <div class="features-box col-sm-6 col-md-3">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-1.jpg" alt=""/>
+                            <img src="assets/images/speakers-1.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Main Speaker</span>
                         </div>
                  
@@ -539,7 +538,7 @@
                 <div class="features-box col-sm-6 col-md-3 xs-margin-4-5 xs-no-margin-bottom xs-no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-2.jpg" alt=""/>
+                            <img src="assets/images/speakers-2.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Special Speaker</span>
                         </div>
                         <div class="bg-gray-light no-padding-rl padding-6 position-relative text-center">
@@ -561,7 +560,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 sm-no-margin-bottom sm-no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-3.jpg" alt=""/>
+                            <img src="assets/images/speakers-3.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Special Speaker</span>
                         </div>
                         <div class="bg-gray-light no-padding-rl padding-6 position-relative text-center">
@@ -584,7 +583,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 sm-no-margin-bottom sm-no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-4.jpg" alt=""/>
+                            <img src="assets/images/speakers-4.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Special Speaker</span>
                         </div>
                         <div class="bg-gray-light no-padding-rl padding-6 position-relative text-center">
@@ -614,7 +613,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-5.jpg" alt=""/>
+                            <img src="assets/images/speakers-5.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Special Speaker</span>
                         </div>
                         
@@ -648,7 +647,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-6.jpg" alt=""/>
+                            <img src="assets/images/speakers-6.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Special Speaker</span>
                         </div>
                         
@@ -682,7 +681,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-7.jpg" alt=""/>
+                            <img src="assets/images/speakers-7.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Guest Speaker</span>
                         </div>
                         
@@ -716,7 +715,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-8.jpg" alt=""/>
+                            <img src="assets/images/speakers-8.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Guest Speaker</span>
                         </div>
                         
@@ -750,7 +749,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-9.jpg" alt=""/>
+                            <img src="assets/images/speakers-9.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Guest Speaker</span>
                         </div>
                         
@@ -784,7 +783,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-10.jpg" alt=""/>
+                            <img src="assets/images/speakers-10.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Guest Speaker</span>
                         </div>
                         
@@ -818,7 +817,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-11.jpg" alt=""/>
+                            <img src="assets/images/speakers-11.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Guest Speaker</span>
                         </div>
                         
@@ -852,7 +851,7 @@
                 <div class="features-box col-sm-6 col-md-3 sm-margin-4-5 margin-3 sm-no-margin-bottom no-margin-bottom sm-no-margin-rl no-margin-rl">
                     <div class="overflow-hidden position-relative width-100">
                         <div class="position-relative">
-                            <img src="assets/images/speakers-12.jpg" alt=""/>
+                            <img src="assets/images/speakers-12.jpg" alt="ICPT2025"/>
                             <span class="bg-base-color display-inline-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-bottom text-extra-small text-uppercase text-white">Guest Speaker</span>
                         </div>
                         
@@ -938,7 +937,7 @@
                 <div class="col-md-5">
                     <div class="card">
                         <div class="card-body" style="background-color: inherit;">
-                            <img src="{% static 'assets/images/thailandmap.svg' %}" alt="" style="height: 60rem;"/>
+                            <img src="{% static 'assets/images/thailandmap.svg' %}" alt="ICPT2025" style="height: 60rem;"/>
                         </div>
                     </div>
                 </div>
@@ -954,25 +953,25 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/thailand.svg' %}" alt="" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Official Name :</span> Kingdom of Thailand</span>
+                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/thailand.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Official Name :</span> Kingdom of Thailand</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/skyscraper.svg' %}" alt="" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Capital :</span> Bangkok</span>
+                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/skyscraper.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Capital :</span> Bangkok</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/time-zone.svg' %}" alt="" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Time Zone:</span>  GMT+7, whose offset is GMT+7. It currently does not observe Daylight Savings Time.</span>
+                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/time-zone.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Time Zone:</span>  GMT+7, whose offset is GMT+7. It currently does not observe Daylight Savings Time.</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/language.svg' %}" alt="" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Official Language:</span> Thai</span>
+                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/language.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Official Language:</span> Thai</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/money.svg' %}" alt="" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Money:</span> Baht</span>
+                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/money.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Money:</span> Baht</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/pray.svg' %}" alt="" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Religion:</span> Buddhism</span>
+                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/pray.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Religion:</span> Buddhism</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/visa.svg' %}" alt="" style="width: 3rem;"/> <span style="font-weight: 700; color: #63151b;">Visa:</span> For most foreigners, you will need a visa to enter Thai territory. You can find all the information on this subject via this <a href="https://www.thaievisa.go.th/" target="_blank" style="color: blue;">link</a> If necessary, we recommend contacting the Thai embassy in your country.</span>
+                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/visa.svg' %}" alt="ICPT2025" style="width: 3rem;"/> <span style="font-weight: 700; color: #63151b;">Visa:</span> For most foreigners, you will need a visa to enter Thai territory. You can find all the information on this subject via this <a href="https://www.thaievisa.go.th/" target="_blank" style="color: blue;">link</a> If necessary, we recommend contacting the Thai embassy in your country.</span>
                                                     </div>
                                                 </div>
                                                 
@@ -1016,7 +1015,7 @@
                         <div class="col-sm-12 col-md-6">
                            <div class="card">
                             <div class="card-body">
-                                <img src="{% static 'assets/images/about2.png' %}" alt=""/>
+                                <img src="{% static 'assets/images/about2.png' %}" alt="ICPT2025"/>
                             </div>
                            </div>
                         </div>
@@ -1055,7 +1054,7 @@
                                     <div class="col-md-6">
                                         <div class="card">
                                             <div class="card-body">
-                                                <img src="{% static 'assets/images/mariothotel.jpg' %}" alt=""/>
+                                                <img src="{% static 'assets/images/mariothotel.jpg' %}" alt="ICPT2025"/>
                                             </div>
                                         </div>
                                     </div>
@@ -1076,13 +1075,13 @@
                                                         <div class="card">
                                                         <div class="card-body">
                                                             <ul>
-                                                                <li> <img src="assets/images/icons/dot.svg" alt="" width="20px;"/> Check In: 3:00 pm</li>
-                                                                <li> <img src="assets/images/icons/dot.svg" alt="" width="20px;"/> Check Out: 12:00 pm</li>
-                                                                <li> <img src="assets/images/icons/dot.svg" alt="" width="20px;"/> Minimum Age to Check In: 18</li>
-                                                                <li> <img src="assets/images/icons/dot.svg" alt="" width="20px;"/> Smoke Free Property</li>
-                                                                <li> <img src="assets/images/icons/dot.svg" alt="" width="20px;"/> Pet Not Allowed (Regrettably pets are not allowed in the hotel)</li>
-                                                                <li> <img src="assets/images/icons/dot.svg" alt="" width="20px;"/> Parking (Complimentary On-Site Parking)</li>
-                                                                <li> <img src="assets/images/icons/dot.svg" alt="" width="20px;"/> Off-Site Parking (Night Bazaar parking Lot 0.1 KM)</li>
+                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Check In: 3:00 pm</li>
+                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Check Out: 12:00 pm</li>
+                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Minimum Age to Check In: 18</li>
+                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Smoke Free Property</li>
+                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Pet Not Allowed (Regrettably pets are not allowed in the hotel)</li>
+                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Parking (Complimentary On-Site Parking)</li>
+                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Off-Site Parking (Night Bazaar parking Lot 0.1 KM)</li>
                                                             </ul>
                                                         </div>
                                                       </div>
@@ -1127,7 +1126,7 @@
                                 <!-- <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">0.2 mile from venue</span> -->
                                 <div class="card">
                                     <div class="card-body">
-                                        <img src="{% static 'assets/images/duangtawan.jpg' %}" width="100%" alt=""/>
+                                        <img src="{% static 'assets/images/duangtawan.jpg' %}" width="100%" alt="ICPT2025"/>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
@@ -1165,7 +1164,7 @@
                                         
                                         <div class="row">
                                             <div class="col-md-12 text-center">
-                                                <img src="{% static 'assets/images/moverick.jpg' %}" width="70%"  alt=""/>
+                                                <img src="{% static 'assets/images/moverick.jpg' %}" width="70%"  alt="ICPT2025"/>
                                             </div>
                                             <div class="col-md-12">
                                                 <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
@@ -1220,7 +1219,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-1.jpg">
-                                            <img src="assets/images/gallery-1.jpg" alt="">
+                                            <img src="assets/images/gallery-1.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                            
@@ -1232,7 +1231,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-2.jpg">
-                                            <img src="assets/images/gallery-2.jpg" alt="">
+                                            <img src="assets/images/gallery-2.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
             
@@ -1243,7 +1242,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-3.jpg">
-                                            <img src="assets/images/gallery-3.jpg" alt="">
+                                            <img src="assets/images/gallery-3.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                                   
@@ -1255,7 +1254,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-4.jpg">
-                                            <img src="assets/images/gallery-4.jpg" alt="">
+                                            <img src="assets/images/gallery-4.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                             
@@ -1267,7 +1266,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-5.jpg">
-                                            <img src="assets/images/gallery-5.jpg" alt="">
+                                            <img src="assets/images/gallery-5.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                               
@@ -1278,7 +1277,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-6.jpg">
-                                            <img src="assets/images/gallery-6.jpg" alt="">
+                                            <img src="assets/images/gallery-6.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                          
@@ -1290,7 +1289,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-7.jpg">
-                                            <img src="assets/images/gallery-7.jpg" alt="">
+                                            <img src="assets/images/gallery-7.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                 
@@ -1301,7 +1300,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-8.jpg">
-                                            <img src="assets/images/gallery-8.jpg" alt="">
+                                            <img src="assets/images/gallery-8.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                           
@@ -1312,7 +1311,7 @@
                                 <figure>
                                     <div class="gallery-img">
                                         <a href="assets/images/gallery-9.jpg">
-                                            <img src="assets/images/gallery-9.jpg" alt="">
+                                            <img src="assets/images/gallery-9.jpg" alt="ICPT2025">
                                         </a>
                                     </div>
                  
@@ -1445,7 +1444,7 @@
 
                                     <div id="accordion-two-collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="accordion-two-heading-1">
                                         <div class="panel-body">
-                                            <p class="text-gray-dark-2 text-large"><img src="assets/images/icons/circle.svg" alt="" style="width: .7rem;"/>  what the abstract is, what content should be included</p>
+                                            <p class="text-gray-dark-2 text-large"><img src="assets/images/icons/circle.svg" alt="ICPT2025" style="width: .7rem;"/>  what the abstract is, what content should be included</p>
                                         </div>
                                         
                                     </div>
@@ -1578,21 +1577,21 @@
                                                <tbody>
                                                  <tr>
                                       
-                                                   <td> <img src="assets/images/icons/circle.svg" alt="" style="width: .7rem;"/>  must be submitted using the online submission link via the website</td>
+                                                   <td> <img src="assets/images/icons/circle.svg" alt="ICPT2025" style="width: .7rem;"/>  must be submitted using the online submission link via the website</td>
                                      
                                                  </tr>
                                                  <tr>
                                      
-                                                   <td><img src="assets/images/icons/circle.svg" alt="" style="width: .7rem;"/>  All abstracts must be submitted in English</td>
+                                                   <td><img src="assets/images/icons/circle.svg" alt="ICPT2025" style="width: .7rem;"/>  All abstracts must be submitted in English</td>
                                                
                                                  </tr>
                                                  <tr>
                                           
-                                                   <td><img src="assets/images/icons/circle.svg" alt="" style="width: .7rem;"/>  Abstracts are limited to a maximum of 300 words (excluding title and affiliations)</td>
+                                                   <td><img src="assets/images/icons/circle.svg" alt="ICPT2025" style="width: .7rem;"/>  Abstracts are limited to a maximum of 300 words (excluding title and affiliations)</td>
                                                  </tr>
                                                  <tr>
                                          
-                                                   <td><img src="assets/images/icons/circle.svg" alt="" style="width: .7rem;"/>  The abstract title is limited to a maximum of 25 words</td>
+                                                   <td><img src="assets/images/icons/circle.svg" alt="ICPT2025" style="width: .7rem;"/>  The abstract title is limited to a maximum of 25 words</td>
                                                  </tr>
                                                </tbody>
                                              </table>
@@ -1623,7 +1622,7 @@
 
                                <div id="accordion-one-collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="accordion-one-heading-1">
                                    <div class="panel-body">
-                                      <p><img src="assets/images/icons/circle.svg" alt="" style="width: .7rem;"/>    What presenter should do, when the abstract can be fix or change </p>
+                                      <p><img src="assets/images/icons/circle.svg" alt="ICPT2025" style="width: .7rem;"/>    What presenter should do, when the abstract can be fix or change </p>
                                    </div>
                                    
                                </div>
@@ -1764,32 +1763,32 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="row">
                         <div class="col-xs-6 col-sm-4 text-center">
-                            <img width="200" src="assets/images/sponsor-1.png" alt=""/>
+                            <img width="200" src="assets/images/sponsor-1.png" alt="ICPT2025"/>
                         </div>
                         
                         
                         <div class="col-xs-6 col-sm-4 xs-margin-3 xs-no-margin-bottom xs-no-margin-rl text-center">
-                            <img width="200" src="assets/images/sponsor-2.png" alt=""/>
+                            <img width="200" src="assets/images/sponsor-2.png" alt="ICPT2025"/>
                         </div>
                         
                         
                         <div class="col-xs-6 col-sm-4 xs-margin-3 xs-no-margin-bottom xs-no-margin-rl text-center">
-                            <img width="200" src="assets/images/sponsor-3.png" alt=""/>
+                            <img width="200" src="assets/images/sponsor-3.png" alt="ICPT2025"/>
                         </div>
                         
                         
                         <div class="col-xs-6 col-sm-4 margin-3 no-margin-bottom no-margin-rl text-center">
-                            <img width="200" src="assets/images/sponsor-4.png" alt=""/>
+                            <img width="200" src="assets/images/sponsor-4.png" alt="ICPT2025"/>
                         </div>
                         
                         
                         <div class="col-xs-6 col-sm-4 margin-3 no-margin-bottom no-margin-rl text-center">
-                            <img width="200" src="assets/images/sponsor-5.png" alt=""/>
+                            <img width="200" src="assets/images/sponsor-5.png" alt="ICPT2025"/>
                         </div>
                         
                         
                         <div class="col-xs-6 col-sm-4 margin-3 no-margin-bottom no-margin-rl text-center">
-                            <img width="200" src="assets/images/sponsor-6.png" alt=""/>
+                            <img width="200" src="assets/images/sponsor-6.png" alt="ICPT2025"/>
                         </div>
                         
                     </div>
@@ -1812,7 +1811,7 @@
             <div class="row">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-1 text-center">
-                        <img src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt="" style="width: 20rem;"/>
+                        <img src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt="ICPT2025" style="width: 20rem;"/>
                         <!-- <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 text-uppercase text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
                             The Annual<br>
                             Conference!
@@ -1870,7 +1869,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-4 text-center">
           <!-- <h6>ICPT2025</h6> -->
-          <img src="{% static 'assets/images/Logo/footerimage.svg' %}" alt="" style="width: 50rem;"/>
+          <img src="{% static 'assets/images/Logo/footerimage.svg' %}" alt="ICPT2025" style="width: 50rem;"/>
           
           <!-- <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p> -->
         </div>
@@ -1895,7 +1894,7 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 text-strt">
                 <ul class="social-icons">
-                  <li><a class="cmu" href="https://www.cmu.ac.th/"><img src="{% static 'assets/images/Logo/Chiang_Mai_University.svg.png' %}" alt=""/></a></li>
+                  <li><a class="cmu" href="https://www.cmu.ac.th/"><img src="{% static 'assets/images/Logo/Chiang_Mai_University.svg.png' %}" alt="ICPT2025"/></a></li>
                   <!-- <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
                   <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
                   <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>    -->

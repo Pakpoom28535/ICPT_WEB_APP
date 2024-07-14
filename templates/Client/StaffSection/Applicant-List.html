@@ -36,7 +36,7 @@
           <div class="col col-stats ms-3 ms-sm-0">
             <div class="numbers">
               <p class="card-category">Abstact Submition</p>
-              <h4 class="card-title">{{qty_student}}</h4>
+              <h4 class="card-title">{{qty_ab}}</h4>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
           <div class="col col-stats ms-3 ms-sm-0">
             <div class="numbers">
               <p class="card-category">Fullpaper Submition</p>
-              <h4 class="card-title">{{qty_visitor}}</h4>
+              <h4 class="card-title">{{qty_full}}</h4>
             </div>
           </div>
         </div>
@@ -97,6 +97,7 @@
             <table id="T1" class="display table table-striped table-hover table-head-bg-primary">
               <thead>
                 <tr>
+                  <th>CodeID</th>
                   <th>Name</th>
                   <th>Register Type</th>
                   <th>Abstract</th>
@@ -124,6 +125,7 @@
               <tbody>
                 {% for user_id, data in user_reviews.items %}
                 <tr class="text-center">
+                  <td>{{ data.userinfo.userprofile.codeno }} </td>
                   <td>{{ data.userinfo.first_name }} {{ data.userinfo.last_name }}</td>
                   <td>{{ data.userinfo.userprofile.User_type }}</td>
                   <td>
@@ -227,7 +229,7 @@
                     <th scope="col">Paper Reviews</th>
                     <th scope="col">Paper Revision</th>
                     <th scope="col">Final Decision</th>
-                    <th scope="col" hidden>Payment</th>
+                    <th scope="col">Payment</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -262,7 +264,7 @@
                         <label class="btn btn-outline-success" for="step5">Checked</label>
                       </div>
                     </td>
-                    <td class="text-center" hidden>
+                    <td class="text-center" >
                       <div class="btn-group" role="group">
                         <input type="checkbox" class="btn-check" id="step6" autocomplete="off">
                         <label class="btn btn-outline-success" for="step6">Checked</label>
@@ -351,6 +353,7 @@
   }
 
   var Regular_edit = 0;
+  var change = 0;
   function showdata(id) {
     clear_data();
     console.log(id);
@@ -411,6 +414,7 @@
     });
   }
   function change_status_review(id,status) {
+    change = 1;
     $.ajax({
       url: '/Applicant-List',
       type: 'POST',
@@ -429,6 +433,7 @@
     });
   }
   function change_status(id,status) {
+    change =1 ;
     $.ajax({
       url: '/Applicant-List',
       type: 'POST',
@@ -448,6 +453,7 @@
     });
   }
   function change_status_submit(reviewUserHistoryId, value){
+    change = 1;
     console.log("Radio button clicked:", reviewUserHistoryId, value);
        $.ajax({
         url: '/Applicant-List',
@@ -472,7 +478,10 @@
     $('#T1').DataTable();
 
     $('#myModal').on('hidden.bs.modal', function () {
-     window.location.reload();
+      if(change == 1){
+        window.location.reload();
+      }
+
     });
     $('#step1').change(function () {
       if ($(this).is(':checked')) {
