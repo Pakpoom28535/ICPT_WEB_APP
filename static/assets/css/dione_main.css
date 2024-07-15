@@ -4897,3 +4897,12 @@ section {
     padding: 10px;
     flex: 50%;
   }
+
+
+  .pointer{
+
+  }
+  .pointer:hover p{
+    color: rgb(105, 30, 36);
+    font-weight: 600;
+  }
