@@ -12,76 +12,97 @@
         </div>
       </div>
       <div class="card-body">
+        <div class="container">
+          <div class="row ms-progressbar" style="border-bottom:0;">
+        
+            <div class="col-4 ms-progressbar-step complete">
+              <div class="text-center ms-progressbar-step-number">Instruction</div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <a href="#" class="ms-progressbar-dot"></a>
+              
+            </div>
+        
+            <div class="col-4 ms-progressbar-step complete">
+              <!-- complete -->
+              <div class="text-center ms-progressbar-step-number">Create Abstract</div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <a href="#" class="ms-progressbar-dot"></a>
+              
+            </div>
+        
+            <div class="col-4 ms-progressbar-step disable">
+              <!-- complete -->
+              <div class="text-center ms-progressbar-step-number">Abstract Review</div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <a href="#" class="ms-progressbar-dot"></a>
+             
+            </div>
+        
+         
+          </div>    
+        </div>
         <div class="row">
 
           <div class="col-md-12 mt-3 mb-2">
             <h6 style="font-weight: 600; color: #65131a;">Submission Checklist</h6>
           </div>
           <div class="col-md-12 mb-4">
-            <p>Carefully review each item listed below before submitting your article. Article submissions that do not
-              follow the guidelines below will be returned to draft or immediately rejected.</p>
+            <p>Carefully review each item listed below before submitting your article. Article submissions that do not follow the guidelines below will be returned to draft or immediately rejected.</p>
             <ol>
-              <li>Manuscript should be prepared in a double column, single-spaced format using a required ICPT2025
-                Access template. A Word and a PDF file are required upon submission. Content on each file must match
-                exactly. File sizes should not exceed 10MB. Download ICPT 2025 Access Templates for (<a
-                  href="/static/templates/Abstract-template.docx">Microsoft Word.</a> )</li>
-              <li>Author lists should be carefully considered before submission. Contributors who do not meet ICPT 2025
-                definition of authorship should be included in the Acknowledgment section of the article. Omitting an
-                author who contributed to your article or including a person who did not fulfill authorship requirements
-                is considered a breach of publishing ethics. Once the list and order of authors has been established,
-                the list and order of authors should not be altered without permission of all living authors of that
-                article, and the decision to allow such changes rests with the Editor.
+              <li>Manuscript should be prepared in a double column, single-spaced format using a required ICPT2025 Access template. A Word and a PDF file are required upon submission. Content on each file must match exactly. File sizes should not exceed 10MB. Download ICPT 2025 Access Templates for (<a href="/static/templates/Abstract-template.docx">Microsoft Word.</a> )</li>
+              <li>Author lists should be carefully considered before submission. Contributors who do not meet ICPT 2025 definition of authorship should be included in the Acknowledgment section of the article. Omitting an author who contributed to your article or including a person who did not fulfill authorship requirements is considered a breach of publishing ethics. Once the list and order of authors has been established, the list and order of authors should not be altered without permission of all living authors of that article, and the decision to allow such changes rests with the Editor.
               </li>
-              <li>All authors should be listed on both the source file (Word file) and the manuscript PDF file. When
-                submitting your files ensure the submission system successfully extracts the full author list from your
-                files.
+              <li>All authors should be listed on both the source file (Word file) and the manuscript PDF file. When submitting your files ensure the submission system successfully extracts the full author list from your files.
               </li>
-              <li>The article should be thoroughly reviewed for proper grammar before being submitted. Articles with
-                poor grammar will be immediately rejected. If needed, ICPT 2025 Access offers Paperpal Preflight to
-                assist authors in checking their manuscript for grammar issues prior to submission. </li>
+              <li>The article should be thoroughly reviewed for proper grammar before being submitted. Articles with poor grammar will be immediately rejected. If needed, ICPT 2025 Access offers Paperpal Preflight to assist authors in checking their manuscript for grammar issues prior to submission. </li>
               <li>All research works should be carefully referenced.</li>
               <li>The article should not be submitted elsewhere at the same time. </li>
               <li>Supplementary material for review (if any).</li>
-              <li>Manuscript keywords (minimum of 3 and maximum of 10). Please carefully select the keywords as this is
-                how we select a relevant Associate Editor to manage the peer review of your article.</li>
-              <li>You will be required to select a manuscript type upon submission. A list and description of manuscript
-                types are listed below. If you are unsure, please leave it as “Research Article”. *Please note that
-                should your article be accepted, the manuscript type will be published on the article.</li>
+              <li>Manuscript keywords (minimum of 3 and maximum of 10).  Please carefully select the keywords as this is how we select a relevant Associate Editor to manage the peer review of your article.</li>
+              <li>You will be required to select a manuscript type upon submission. A list and description of manuscript types are listed below. If you are unsure, please leave it as “Research Article”. *Please note that should your article be accepted, the manuscript type will be published on the article.</li>
               <li>Opposed reviewers (if any).</li>
-              <li>If the article was previously rejected after peer review with encouragement to update and resubmit,
-                then a complete “list of updates” must be included in a separate document. The list of updates should
-                have the following regarding each comment:
+              <li>If the article was previously rejected after peer review with encouragement to update and resubmit, then a complete “list of updates” must be included in a separate document. The list of updates should have the following regarding each comment:
                 <ul>
                   <li>reviewers’ concerns</li>
                   <li>authors’ response to the concerns</li>
                   <li>actual changes implemented</li>
                 </ul>
               </li>
-              <li>ICPT 2025 Access does not have a page limit; however, we strongly recommend keeping the page count
-                under 50 pages for ease of readability. Longer articles may result in longer peer review times.
-                Additional content can be added as supplementary material.</li>
+              <li>ICPT 2025 Access does not have a page limit; however, we strongly recommend keeping the page count under 50 pages for ease of readability. Longer articles may result in longer peer review times. Additional content can be added as supplementary material.</li>
               <li>In alignment with the ICPT 2025 of Ethics and with respect to the wishes of the subject.</li>
             </ol>
-
+          
           </div>
           <hr>
           <div class="card">
             <div class="card-body">
-              <div class="col-md-6 mt-3 mt-3">
-                <form method="post" action="/CreateSubmission" enctype="multipart/form-data" style="width: 90rem;">
-                  {% csrf_token %}
-                  <div class="form-group">
-                    <label for="title">Abstract Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
-                      required />
-                    <small id="title" class="form-text text-muted">Please enter Abstract Title</small>
-                  </div>
-                  <div class="form-group">
-                    <input type="file" class="form-control-file" id="file" name="file" required />
-                    <button class="btn btn-success" type="submit">Submit</button>
-                  </div>
-                </form>
+              <div class="row">
+                <div class="col-md-12 mt-2 mb-2">
+                  <p style="font-weight: 700;">Download >> <a href="/static/templates/Abstract-template.docx">ICPT2025-Template</a> </p>
+                </div>
+                <div class="col-6 mt-3 mt-3">
+                  <form method="post" action="/CreateSubmission" enctype="multipart/form-data" style="width: 90rem;">
+                    {% csrf_token %}
+                    <div class="form-group">
+                      <label for="title">Abstract Title</label>
+                      <input type="text" class="form-control" style="width: 60%;" id="title" name="title" placeholder="Enter Title"
+                        required />
+                      <small id="title" class="form-text text-muted">Please enter Abstract Title</small>
+                    </div>
+                    <div class="form-group">
+                      <input type="file" class="form-control-file" id="file" name="file" required />
+                      <button class="btn btn-success" type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
               </div>
+              
             </div>
           </div>
 
