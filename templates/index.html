@@ -2,62 +2,67 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025</title>
-    <meta name="description" content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025"/>
-    <meta name="keywords" content="ICPT, ICPT2025, Pavement conference, Civil engineering international, conference, Road international conference"/>
-    <meta name="robots" content="ICPT, ICPT2025, Pavement conference, Civil engineering international, conference, Road international conference">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <meta name="description"
+        content="ICPT2025 - 14TH INTERNATIONAL CONFERENCE ON ROAD AND AIRFIELD PAVEMENT TECHNOLOGY 2025" />
+    <meta name="keywords"
+        content="ICPT, ICPT2025, Pavement conference, Civil engineering international, conference, Road international conference" />
+    <meta name="robots"
+        content="ICPT, ICPT2025, Pavement conference, Civil engineering international, conference, Road international conference">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Loading Bootstrap CSS -->
     <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
-    
+
     <!-- Loading Font Icons -->
     <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-    
+
     <!-- Include all css plugins (below), or include individual files as needed -->
     <link href="{% static 'assets/css/flickity.min.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
-    
+
     <!-- Main CSS -->
     <link href="{% static 'assets/css/dione_main.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'assets/css/dione_style.css' %}" rel="stylesheet" type="text/css">
-    
+
     <!-- Color Skins CSS -->
     <link href="{% static 'assets/css/dione_color_icpt.css' %}" rel="stylesheet" type="text/css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16615526072"></script>
     <!-- Event snippet for Purchase conversion page -->
-<script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-16615526072/2zydCI3D2sYZELid8_I9',
-        'transaction_id': ''
-    });
-  </script>
-  
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16615526072/2zydCI3D2sYZELid8_I9',
+            'transaction_id': ''
+        });
+    </script>
 
-    gtag('config', 'AW-16615526072');
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16615526072');
     </script>
 
 
     <style>
-        .bg-fimage{
+        .bg-fimage {
             background-image: url("{% static 'assets/images/bg-engineer.png' %}");
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .swal-wide{
-    width:850px !important;
-}
+
+        .swal-wide {
+            width: 850px !important;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             Swal.fire({
                 // title: "<strong>HTML <u>example</u></strong>",
                 // icon: "info",
@@ -108,34 +113,37 @@
                     <i class="fa fa-thumbs-down"></i>
                 `,
                 cancelButtonAriaLabel: "Thumbs down"
-                });
+            });
         });
-      </script>
+    </script>
 </head>
+
 <body id="page-top">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    
+
+
     <!-- Navigation Start -->
     <nav id="navigation" class="navbar navbar-fixed-top navbar-white">
         <div class="container">
             <div class="row">
                 <div class="navbar-header col-md-3" style="background-color: #63151b;">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-dione">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-dione">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll font-family-alt letter-spacing-1 text-extra-large text-uppercase" href="/">
-                        <img src="{% static 'assets/images/Logo/ICPT2025top.svg' %}" alt="ICPT2025"/>
+                    <a class="navbar-brand page-scroll font-family-alt letter-spacing-1 text-extra-large text-uppercase"
+                        href="/">
+                        <img src="{% static 'assets/images/Logo/ICPT2025top.svg' %}" alt="ICPT2025" />
                         <!-- <h5 class="brand-icons" style=" font-weight: 800; font-style: italic; color: #fff;">ICPT 2025  </h5> -->
                     </a>
                 </div>
                 <!-- //.navbar-header -->
-                
+
                 <div id="navbar-dione" class="navbar-collapse collapse col-md-9 pull-right">
                     <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-small text-uppercase">
                         <li><a href="#conference" class="page-scroll">Conference Themes</a></li>
@@ -149,36 +157,38 @@
                         <li><a href="#contact" class="page-scroll">Contact</a></li>
                         <!-- <li><a href="/Client-Register" class="page-scroll">Online-Register</a></li> -->
                         <!-- <li><a href="/signin" class="page-scroll">Online-Register</a></li> -->
-                       
+
                     </ul>
                 </div>
                 <!-- //.navbar-collapse -->
             </div>
-            
+
         </div>
-        
+
     </nav>
     <!-- //Navigation End -->
-    
-    
-    
+
+
+
     <!-- Section - Home Start -->
     <section id="home-bg-parallax" class="height-100 no-padding overflow-hidden width-100">
         <!-- BG Parallax -->
         <div class="bg-parallax bg-overlay-black-4 width-auto"></div>
-        
+
         <div class="display-table height-100 position-absolute position-top position-left width-100">
             <div class="display-table-cell vertical-align-middle">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center">
-                            <img class="center-logo" src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt="ICPT2025"/>
+                            <img class="center-logo" src="{% static 'assets/images/Logo/icptnewLogo.svg' %}"
+                                alt="ICPT2025" />
                             <!-- <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 text-uppercase text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
                                 The Annual<br>
                                 Conference!
                             </h2> -->
-   
-                            <p class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-gray-light-2 xs-text-large text-extra-large text-uppercase" style="font-weight: 600;">
+
+                            <p class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-gray-light-2 xs-text-large text-extra-large text-uppercase"
+                                style="font-weight: 600;">
                                 14th International Conference on Road
                                 <br>and Airfield Pavement Technology 2025
                                 <br><span style="color: #eaaf51; font-weight: 700;">16 - 18 July 2025</span>
@@ -186,242 +196,393 @@
                             </p>
                             <!-- <a href="#intro" class="page-scroll btn btn-base-color sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl">16th to 18th July 2025 CHIANG MAI, Thailand</a> -->
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
-                
+
             </div>
-            
+
         </div>
-        
+
     </section>
 
     <section class="bg-fimage">
         <div class="row no-padding-rl no-padding-top padding-1">
             <div class="col-md-8 col-md-offset-2 text-center">
-                <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium ">Message from Chairman,</h3>
-                <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium ">ICPT International Executive Committee</h3>
+                <h3
+                    class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium ">
+                    Message from Chairman,</h3>
+                <h3
+                    class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium ">
+                    ICPT International Executive Committee</h3>
                 <!-- <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large" style="font-weight: 700; color: #63151b;"></p> -->
             </div>
-            
+
         </div>
-        <div class="card border-round" >
+        <div class="card border-round">
             <div class="card-body">
-                <div class="container" style="background-color: #fff; padding-top: 3rem; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
+                <div class="container"
+                    style="background-color: #fff; padding-top: 3rem; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 text-center">
-                            <img src="{% static 'assets/images/DrFaaa.png' %}" alt="ICPT2025" style="width: 32rem;"/>
+                            <img src="{% static 'assets/images/DrFaaa.png' %}" alt="ICPT2025" style="width: 32rem;" />
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <!-- <h2 class="font-family-alt sm-title-large title-extra-large-2 text-gray-dark-2">Chiang Mai</h2>
                             <span class="bg-base-color margin-6-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span> -->
                             <!-- <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">It is exciting to have the ICPT Conference coming back to Thailand 14 years after the 7th ICPT was held in Bangkok in 2011. It has been more than 30 years since the ICPT conference series was kicked off in 1993 in Singapore. The main aim of the conference series is to promote pavement R&D and the adoption of good practice and sustainable technology in various phases of pavement development, encompassing design, construction, maintenance and rehabilitation activities. The current focus of ICPT is on the fast developing East Asian regions, with special emphasis on encouraging interaction of pavement professionals and researchers among Asian countries, and exchanging of experience and technology with other parts of the world.  </p> -->
-                            <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is exciting to have the ICPT Conference coming back to Thailand 14 years after the 7th ICPT was held in Bangkok in 2011. It has been more than 30 years since the ICPT conference series was kicked off in 1993 in Singapore. The main aim of the conference series is to promote pavement R&D and the adoption of good practice and sustainable technology in various phases of pavement development, encompassing design, construction, maintenance and rehabilitation activities. The current focus of ICPT is on the fast developing East Asian regions, with special emphasis on encouraging interaction of pavement professionals and researchers among Asian countries, and exchanging of experience and technology with other parts of the world.</p>
+                            <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large"
+                                style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is exciting
+                                to have the ICPT Conference coming back to Thailand 14 years after the 7th ICPT was held
+                                in Bangkok in 2011. It has been more than 30 years since the ICPT conference series was
+                                kicked off in 1993 in Singapore. The main aim of the conference series is to promote
+                                pavement R&D and the adoption of good practice and sustainable technology in various
+                                phases of pavement development, encompassing design, construction, maintenance and
+                                rehabilitation activities. The current focus of ICPT is on the fast developing East
+                                Asian regions, with special emphasis on encouraging interaction of pavement
+                                professionals and researchers among Asian countries, and exchanging of experience and
+                                technology with other parts of the world.</p>
                         </div>
                         <div class="col-sm-12 col-md-12">
-                            <p class="font-family-alt margin-1 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have made good progress in the last 30 years. As of now, 11 cities of countries in East Asia have hosted ICPT conferences. The host cities include Singapore, Beijing, Kunming, Seoul, Sapporo, Bangkok, Taipei, Dalian, Hong Kong, Kuala Lumpur, and Colombo. We are very pleased to have Chiangmai joining the ICPT Hall of Fame. </p>
-                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ICPT International Executive Committee has worked closely with the 14th ICPT Conference Organizing Committee of the University of Chiangmai since late 2023. I am deeply impressed with the tremendous effort made by the 14th ICPT Organizing Committee to make this conference an exciting in the wonderful City of Chiangmai.  On behalf of the ICPT International Executive Committee, I would like to convey my heartfelt thanks to the Organizing Committee, the University of Chiangmai for bringing all of us together for another exciting ICPT conference.  </p>
-                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">I wish the 14th ICPT Conference every success.</p>
-                            <p class="font-family-alt margin-1 no-margin-bottom no-margin-rl text-large" style="font-weight: 700; color: #63151b;">Dr. T. F. Fwa</p>
-                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large" style="font-weight: 700; color: #63151b;">Chairman</p>
-                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large" style="font-weight: 700; color: #63151b;">ICPT International Executive Committee</p>
-                            <br/>
-                          
+                            <p class="font-family-alt margin-1 no-margin-bottom no-margin-rl text-large"
+                                style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have made
+                                good progress in the last 30 years. As of now, 11 cities of countries in East Asia have
+                                hosted ICPT conferences. The host cities include Singapore, Beijing, Kunming, Seoul,
+                                Sapporo, Bangkok, Taipei, Dalian, Hong Kong, Kuala Lumpur, and Colombo. We are very
+                                pleased to have Chiangmai joining the ICPT Hall of Fame. </p>
+                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large"
+                                style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ICPT
+                                International Executive Committee has worked closely with the 14th ICPT Conference
+                                Organizing Committee of the University of Chiangmai since late 2023. I am deeply
+                                impressed with the tremendous effort made by the 14th ICPT Organizing Committee to make
+                                this conference an exciting in the wonderful City of Chiangmai. On behalf of the ICPT
+                                International Executive Committee, I would like to convey my heartfelt thanks to the
+                                Organizing Committee, the University of Chiangmai for bringing all of us together for
+                                another exciting ICPT conference. </p>
+                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large"
+                                style="font-weight: 500; color: #63151b;">I wish the 14th ICPT Conference every success.
+                            </p>
+                            <p class="font-family-alt margin-1 no-margin-bottom no-margin-rl text-large"
+                                style="font-weight: 700; color: #63151b;">Dr. T. F. Fwa</p>
+                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large"
+                                style="font-weight: 700; color: #63151b;">Chairman</p>
+                            <p class="font-family-alt margin-0 no-margin-bottom no-margin-rl text-large"
+                                style="font-weight: 700; color: #63151b;">ICPT International Executive Committee</p>
+                            <br />
+
                         </div>
-                       
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         </div>
-       
-       
-        
+
+
+
     </section>
 
 
-     <!-- Section - Hotels Start -->
-     <section id="conference" class="bg-fimage">
+    <!-- Section - Hotels Start -->
+    <section id="conference" class="bg-fimage">
         <div class="container">
             <div class="row no-padding-rl no-padding-top padding-8">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">ICPT 2025 Conference Themes</h3>
+                    <h3
+                        class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
+                        ICPT 2025 Conference Themes</h3>
                 </div>
             </div>
 
             <div class="row" style="margin-bottom: 3rem;">
                 <!-- Features Box Style v3 Start -->
                 <div class="features-box col-sm-12 col-md-12">
-                    <div class="border border-gray-light border-round box-shadow-yes position-relative" data-mh="mh-features-box-v3">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative"
+                        data-mh="mh-features-box-v3">
                         <div class="display-table height-100 no-padding-rl padding-7 width-100">
-                 
+
                             <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
-                              
+
                                 <div class="row">
                                     <div class="col-md-6 pb-3">
                                         <ul>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Mechanistic-Empirical Pavement Design</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Low-carbon Materials in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Artificial Intelligence (AI) in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Life Cycle Assessment in Road and Airfield Construction</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Life Cycle Cost Analysis in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Transportation Infrastructure Resilience</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Monitoring and Sensors</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Environmental Management in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Waste Management for Pavement Construction</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Mechanistic-Empirical Pavement Design</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Low-carbon Materials in Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Artificial Intelligence (AI) in Pavement Engineering
+                                            </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Life Cycle Assessment in Road and Airfield
+                                                Construction</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Life Cycle Cost Analysis in Pavement Engineering
+                                            </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Transportation Infrastructure Resilience</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Pavement Monitoring and Sensors</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Environmental Management in Pavement Engineering
+                                            </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Waste Management for Pavement Construction</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6 pb-3">
                                         <ul>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Environmental Management in Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Waste Management for Pavement Construction</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement and Transportation Safety</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Law and Enforcement Related to Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Evaluation and Performance</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Maintenance and Rehabilitation Techniques</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Pavement Materials Characterization</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>GIS Application for Pavement</li>
-                                            
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Climate Change Adaptation in Transportation and Pavement Engineering</li>
-                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/>Other topics related to Pavement Engineering </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Environmental Management in Pavement Engineering
+                                            </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Waste Management for Pavement Construction</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Pavement and Transportation Safety</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Law and Enforcement Related to Pavement Engineering
+                                            </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Pavement Evaluation and Performance</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Pavement Maintenance and Rehabilitation Techniques
+                                            </li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Pavement Materials Characterization</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />GIS Application for Pavement</li>
+
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Climate Change Adaptation in Transportation and
+                                                Pavement Engineering</li>
+                                            <li style="font-weight: 700; font-size: 1.5rem;"> <img
+                                                    src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025"
+                                                    width="20px;" />Other topics related to Pavement Engineering </li>
                                         </ul>
                                     </div>
                                 </div>
-                                
+
                                 <!-- <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">0.2 mile from venue</span> -->
                             </div>
-                            
+
                         </div>
-                        
-                        
-                       
+
+
+
                     </div>
                     <!-- //.border -->
                 </div>
                 <!-- //Features Box Style v3 End -->
             </div>
-            
+
         </div>
-        
+
     </section>
     <!-- //Section - Hotels End -->
 
     <section id="about" class="bg-fimage">
         <div class="row no-padding-rl no-padding-top padding-1">
             <div class="col-md-8 col-md-offset-2 text-center">
-                <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">About ICPT</h3>
-                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">"Discover the wealth of knowledge and benefits awaiting you in the field of pavement technology"</p>
+                <h3
+                    class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
+                    About ICPT</h3>
+                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">"Discover
+                    the wealth of knowledge and benefits awaiting you in the field of pavement technology"</p>
             </div>
-            
+
         </div>
-        <div class="card border-round" >
+        <div class="card border-round">
             <div class="card-body">
-                <div class="container" style="background-color: #fff; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
+                <div class="container"
+                    style="background-color: #fff; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="card" >
+                            <div class="card">
                                 <div class="card-body">
-                                    <div class="container" style="background-color: #fff; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
+                                    <div class="container"
+                                        style="background-color: #fff; padding: 3rem; padding-left: 3rem; padding-right: 3rem;">
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
                                                 <!-- <h2 class="font-family-alt sm-title-large title-extra-large-2 text-gray-dark-2">Chiang Mai</h2>
                                                 <span class="bg-base-color margin-6-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span> -->
-                                                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">The International Committee on Pavement Technology (ICPT)</span> is a non-profit non-governmental organization hosted by the Centre for Transportation Research of the National University of Singapore. The ICPT was established in 1992 under an agreement between the Centre for Transportation Research, National University of Singapore, and the Pavement Engineering Society (Singapore). The permanent secretariat of the ICPT is hosted by the Centre for Transportation Research, National University of Singapore. The first ICPT conference was held in Singapore in 1993 as a Southeast Asian regional event focusing on pavement construction and maintenance technology.</p>
-                                                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large" style="font-weight: 500; color: #63151b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It was the success and positive experience of the first conference that led to the decision to launch the ICPT series of international conferences, formally known as the International Conference on Road & Airfield Pavement Technology. Subsequent ICPT conferences were held in Singapore (1995), Beijing (1998), Kunming, China (2000), Seoul (2005), Sapporo, Japan (2008), Bangkok (2011), Taiwan (2013), Dalian, China (2015), Hongkong (2017), Kuala Lumpur (2019), Sri Lanka (2021), Beijing (2023).</p>
-                                                <br/>
-                                              
+                                                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large"
+                                                    style="font-weight: 500; color: #63151b;">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">The
+                                                        International Committee on Pavement Technology (ICPT)</span> is
+                                                    a non-profit non-governmental organization hosted by the Centre for
+                                                    Transportation Research of the National University of Singapore. The
+                                                    ICPT was established in 1992 under an agreement between the Centre
+                                                    for Transportation Research, National University of Singapore, and
+                                                    the Pavement Engineering Society (Singapore). The permanent
+                                                    secretariat of the ICPT is hosted by the Centre for Transportation
+                                                    Research, National University of Singapore. The first ICPT
+                                                    conference was held in Singapore in 1993 as a Southeast Asian
+                                                    regional event focusing on pavement construction and maintenance
+                                                    technology.</p>
+                                                <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-large"
+                                                    style="font-weight: 500; color: #63151b;">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It was the success and positive
+                                                    experience of the first conference that led to the decision to
+                                                    launch the ICPT series of international conferences, formally known
+                                                    as the International Conference on Road & Airfield Pavement
+                                                    Technology. Subsequent ICPT conferences were held in Singapore
+                                                    (1995), Beijing (1998), Kunming, China (2000), Seoul (2005),
+                                                    Sapporo, Japan (2008), Bangkok (2011), Taiwan (2013), Dalian, China
+                                                    (2015), Hongkong (2017), Kuala Lumpur (2019), Sri Lanka (2021),
+                                                    Beijing (2023).</p>
+                                                <br />
+
                                             </div>
                                             <div class="col-sm-12 col-md-6">
-                                                <div class="card" style="background-color: #63151b; padding: 5rem; color: #fff;">
+                                                <div class="card"
+                                                    style="background-color: #63151b; padding: 5rem; color: #fff;">
                                                     <div class="card-body text-center">
                                                         <div class="row">
                                                             <div class="col-md-12">
-                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Abstracts submission</span>
-                                                                <p style="font-weight: 600;">1 August 2024 to 1 December 2024</p>
+                                                                <span
+                                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+                                                                    style="color: #eaaf51;">Abstracts submission</span>
+                                                                <p style="font-weight: 600;">1 August 2024 to 1 December
+                                                                    2024</p>
                                                             </div>
                                                             <div class="col-md-12">
-                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of abstracts</span>
+                                                                <span
+                                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+                                                                    style="color: #eaaf51;">Acceptance of
+                                                                    abstracts</span>
                                                                 <p style="font-weight: 600;">By 15 December 2024</p>
                                                             </div>
                                                             <div class="col-md-12">
-                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Paper submission</span>
-                                                                <p style="font-weight: 600;">16 December 2024 to 28 February 2025</p>
+                                                                <span
+                                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+                                                                    style="color: #eaaf51;">Paper submission</span>
+                                                                <p style="font-weight: 600;">16 December 2024 to 28
+                                                                    February 2025</p>
                                                             </div>
                                                             <div class="col-md-12">
-                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Acceptance of papers</span>
+                                                                <span
+                                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+                                                                    style="color: #eaaf51;">Acceptance of papers</span>
                                                                 <p style="font-weight: 600;">By 30 April 2025</p>
                                                             </div>
                                                             <div class="col-md-12">
-                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #eaaf51;">Early Bird Registration</span>
-                                                                <p style="font-weight: 600;">To be announced at a later date</p>
+                                                                <span
+                                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+                                                                    style="color: #eaaf51;">Early Bird
+                                                                    Registration</span>
+                                                                <p style="font-weight: 600;">To be announced at a later
+                                                                    date</p>
                                                             </div>
                                                             <div class="col-md-12">
-                                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase" style="color: #fff;">The next update is scheduled for release in August 2024</span>
+                                                                <span
+                                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+                                                                    style="color: #fff;">The next update is scheduled
+                                                                    for release in August 2024</span>
                                                                 <!-- <p style="font-weight: 600;"> June 2024</p> -->
                                                             </div>
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         </div>
-       
-       
-        
+
+
+
     </section>
-    
-    
-    
-    
-  <!-- Section - Venue Start -->
-<section id="venue" class="bg-cover bg-overlay-black-5 display-table height-100 no-padding width-100">
-    <div class="display-table-cell vertical-align-middle">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-8">
-                    <div class="bg-white border-round padding-13 position-relative">
-                        <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">Venue</h3>
-                        <span class="display-block font-family-alt margin-4-5 no-margin-bottom no-margin-rl text-base-color title-small">CHIANG MAI MARRIOTT HOTEL</span>
-                        <p class="margin-4-5 no-margin-bottom no-margin-rl text-large text-gray-dark-2" style="font-weight: 700; text-align: center; color: #63151b;"><span style="color: #63151b;">"Discover Unrivaled Elegance for Your Next Event at Chiang Mai Marriott Hotel"</span> </p>
-                        <p class="no-margin-bottom no-margin-rl text-large text-red-eng">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elevate your conferences, meetings, and events to new heights with our state-of-the-art conference hall. Featuring sophisticated design, cutting-edge technology, and impeccable service, we offer the perfect venue for your gatherings.</p>
-                        <p class="no-margin-bottom no-margin-rl text-large text-red-eng">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From corporate seminars to grand celebrations, our versatile spaces can accommodate events of all sizes, ensuring a seamless and unforgettable experience for you and your guests.</p>
-                        <p class="no-margin-bottom no-margin-rl text-large text-red-eng">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let our dedicated event planners take care of every detail, while you focus on making lasting memories. Elevate your next event with Chiang Mai Marriott Hotel – where excellence meets sophistication."</p>
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="https://maps.app.goo.gl/SST6uijdr7ity9GV8" class="btn btn-outline-black btn-medium margin-7 no-margin-bottom no-margin-rl" target="_blank">Visit Map</a> <a href="https://www.marriott.com/en-us/hotels/cnxmc-chiang-mai-marriott-hotel/overview/" class="btn btn-base-color btn-medium margin-7 no-margin-bottom no-margin-rl" target="_blank">more Information</a>
- 
+
+
+
+
+    <!-- Section - Venue Start -->
+    <section id="venue" class="bg-cover bg-overlay-black-5 display-table height-100 no-padding width-100">
+        <div class="display-table-cell vertical-align-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="bg-white border-round padding-13 position-relative">
+                            <h3
+                                class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
+                                Venue</h3>
+                            <span
+                                class="display-block font-family-alt margin-4-5 no-margin-bottom no-margin-rl text-base-color title-small">CHIANG
+                                MAI MARRIOTT HOTEL</span>
+                            <p class="margin-4-5 no-margin-bottom no-margin-rl text-large text-gray-dark-2"
+                                style="font-weight: 700; text-align: center; color: #63151b;"><span
+                                    style="color: #63151b;">"Discover Unrivaled Elegance for Your Next Event at Chiang
+                                    Mai Marriott Hotel"</span> </p>
+                            <p class="no-margin-bottom no-margin-rl text-large text-red-eng">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elevate your conferences, meetings, and events to new
+                                heights with our state-of-the-art conference hall. Featuring sophisticated design,
+                                cutting-edge technology, and impeccable service, we offer the perfect venue for your
+                                gatherings.</p>
+                            <p class="no-margin-bottom no-margin-rl text-large text-red-eng">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From corporate seminars to grand celebrations, our
+                                versatile spaces can accommodate events of all sizes, ensuring a seamless and
+                                unforgettable experience for you and your guests.</p>
+                            <p class="no-margin-bottom no-margin-rl text-large text-red-eng">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let our dedicated event planners take care of every
+                                detail, while you focus on making lasting memories. Elevate your next event with Chiang
+                                Mai Marriott Hotel – where excellence meets sophistication."</p>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="https://maps.app.goo.gl/SST6uijdr7ity9GV8"
+                                        class="btn btn-outline-black btn-medium margin-7 no-margin-bottom no-margin-rl"
+                                        target="_blank">Visit Map</a> <a
+                                        href="https://www.marriott.com/en-us/hotels/cnxmc-chiang-mai-marriott-hotel/overview/"
+                                        class="btn btn-base-color btn-medium margin-7 no-margin-bottom no-margin-rl"
+                                        target="_blank">more Information</a>
+
+                                </div>
                             </div>
+
                         </div>
-                       
+                        <!-- //.bg-white -->
                     </div>
-                    <!-- //.bg-white -->
+                    <!-- //.col-md-5 -->
                 </div>
-                <!-- //.col-md-5 -->
+
             </div>
-            
+
         </div>
-        
-    </div>
-    
-</section>
-<!-- //Section - Venue End -->
-    
-    
-    
+
+    </section>
+    <!-- //Section - Venue End -->
+
+
+
     <!-- Section - Speakers Start -->
     <!-- <section id="speakers" class="bg-fimage">
         <div class="container">
@@ -814,9 +975,9 @@
     </section> -->
     <!-- //Section - Speakers End -->
 
-    
-    
-    
+
+
+
     <!-- Milestones Start -->
     <!-- <div id="milestones" class="bg-cover bg-overlay-black-6 no-padding-rl padding-9">
         <div class="container">
@@ -848,143 +1009,219 @@
         </div>
        
     </div> -->
-  
-    
-     <!-- Section - About Thailand -->
-     <section id="desitnations" class="bg-fimage">
+
+
+    <!-- Section - About Thailand -->
+    <section id="desitnations" class="bg-fimage">
         <div class="container">
             <div class="row no-padding-rl no-padding-top padding-8">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">Getting to know Thailand</h3>
-                    <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">Discover the wonders of Thailand! From bustling cities to serene beaches, experience the rich culture and stunning landscapes.</p>
+                    <h3
+                        class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
+                        Getting to know Thailand</h3>
+                    <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">
+                        Discover the wonders of Thailand! From bustling cities to serene beaches, experience the rich
+                        culture and stunning landscapes.</p>
                 </div>
-                
+
             </div>
-            
-            
+
+
             <div class="row">
                 <div class="col-md-5">
                     <div class="card">
                         <div class="card-body" style="background-color: inherit;">
-                            <img src="{% static 'assets/images/thailandmap.svg' %}" alt="ICPT2025" style="height: 60rem;"/>
+                            <img src="{% static 'assets/images/thailandmap.svg' %}" alt="ICPT2025"
+                                style="height: 60rem;" />
                         </div>
                     </div>
                 </div>
                 <div class="features-box col-sm-12 col-md-7">
-                    <div class="border border-gray-light border-round box-shadow-yes position-relative" data-mh="mh-features-box-v3">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative"
+                        data-mh="mh-features-box-v3">
                         <div class="display-table height-100 no-padding-rl padding-7 width-100">
                             <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
-                                <a href="#" class="text-black"><span class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Thailand Faq</span></a>
-                                <span class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
+                                <a href="#" class="text-black"><span
+                                        class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Thailand
+                                        Faq</span></a>
+                                <span
+                                    class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/thailand.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Official Name :</span> Kingdom of Thailand</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img
+                                                                src="{% static 'assets/images/icons/thailand.svg' %}"
+                                                                alt="ICPT2025" style="width: 3rem;" /> <span
+                                                                style="font-weight: 700; color: #63151b;">Official Name
+                                                                :</span> Kingdom of Thailand</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/skyscraper.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Capital :</span> Bangkok</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img
+                                                                src="{% static 'assets/images/icons/skyscraper.svg' %}"
+                                                                alt="ICPT2025" style="width: 3rem;" /> <span
+                                                                style="font-weight: 700; color: #63151b;">Capital
+                                                                :</span> Bangkok</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/time-zone.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Time Zone:</span>  GMT+7, whose offset is GMT+7. It currently does not observe Daylight Savings Time.</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img
+                                                                src="{% static 'assets/images/icons/time-zone.svg' %}"
+                                                                alt="ICPT2025" style="width: 3rem;" /> <span
+                                                                style="font-weight: 700; color: #63151b;">Time
+                                                                Zone:</span> GMT+7, whose offset is GMT+7. It currently
+                                                            does not observe Daylight Savings Time.</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/language.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Official Language:</span> Thai</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img
+                                                                src="{% static 'assets/images/icons/language.svg' %}"
+                                                                alt="ICPT2025" style="width: 3rem;" /> <span
+                                                                style="font-weight: 700; color: #63151b;">Official
+                                                                Language:</span> Thai</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/money.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Money:</span> Baht</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img
+                                                                src="{% static 'assets/images/icons/money.svg' %}"
+                                                                alt="ICPT2025" style="width: 3rem;" /> <span
+                                                                style="font-weight: 700; color: #63151b;">Money:</span>
+                                                            Baht</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/pray.svg' %}" alt="ICPT2025" style="width: 3rem;"/>  <span style="font-weight: 700; color: #63151b;">Religion:</span> Buddhism</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img
+                                                                src="{% static 'assets/images/icons/pray.svg' %}"
+                                                                alt="ICPT2025" style="width: 3rem;" /> <span
+                                                                style="font-weight: 700; color: #63151b;">Religion:</span>
+                                                            Buddhism</span>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <span class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img src="{% static 'assets/images/icons/visa.svg' %}" alt="ICPT2025" style="width: 3rem;"/> <span style="font-weight: 700; color: #63151b;">Visa:</span> For most foreigners, you will need a visa to enter Thai territory. You can find all the information on this subject via this <a href="https://www.thaievisa.go.th/" target="_blank" style="color: blue;">link</a> If necessary, we recommend contacting the Thai embassy in your country.</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-500 margin-5 no-margin-bottom no-margin-rl text-large "><img
+                                                                src="{% static 'assets/images/icons/visa.svg' %}"
+                                                                alt="ICPT2025" style="width: 3rem;" /> <span
+                                                                style="font-weight: 700; color: #63151b;">Visa:</span>
+                                                            For most foreigners, you will need a visa to enter Thai
+                                                            territory. You can find all the information on this subject
+                                                            via this <a href="https://www.thaievisa.go.th/"
+                                                                target="_blank" style="color: blue;">link</a> If
+                                                            necessary, we recommend contacting the Thai embassy in your
+                                                            country.</span>
                                                     </div>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">0.2 mile from venue</span> -->
                             </div>
-                            
+
                         </div>
-                        
-                        
-                       
+
+
+
                     </div>
                     <!-- //.border -->
                 </div>
                 <!-- //Features Box Style v3 End -->
-        
+
             </div>
-            
+
         </div>
-        
+
     </section>
     <!-- //Section - About End -->
 
-     <!-- Section - Chiang Mai -->
-     <section class="bg-engcolor">
-        <div class="card border-round" >
+    <!-- Section - Chiang Mai -->
+    <section class="bg-engcolor">
+        <div class="card border-round">
             <div class="card-body">
-                <div class="container" style="background-color: #fff; padding: 10rem; padding-left: 5rem; padding-right: 5rem;">
+                <div class="container"
+                    style="background-color: #fff; padding: 10rem; padding-left: 5rem; padding-right: 5rem;">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
-                            <h2 class="font-family-alt sm-title-large title-extra-large-2 text-gray-dark-2">Chiang Mai</h2>
-                            <span class="bg-base-color margin-6-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
-                            <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-red-eng text-large">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chiang Mai is the hub of Northern Thailand. After Bangkok, Chiang Mai is the second largest city and also the fourth-largest city in Thailand. This is consistently cited as one of the best tourist destinations in the world. Thailand ranks among the world’s best places for retirement because of low living expenses, good environment, good weather and nice people.</p>
-                            <br/>
-                            <a href="/thailandinfo" target="_blank" class="page-scroll btn btn-base-color btn-large display-block letter-spacing-2 text-small width-50">more Information</a>
+                            <h2 class="font-family-alt sm-title-large title-extra-large-2 text-gray-dark-2">Chiang Mai
+                            </h2>
+                            <span
+                                class="bg-base-color margin-6-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
+                            <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-red-eng text-large">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chiang Mai is the hub of Northern Thailand. After Bangkok,
+                                Chiang Mai is the second largest city and also the fourth-largest city in Thailand. This
+                                is consistently cited as one of the best tourist destinations in the world. Thailand
+                                ranks among the world’s best places for retirement because of low living expenses, good
+                                environment, good weather and nice people.</p>
+                            <br />
+                            <a href="/thailandinfo" target="_blank"
+                                class="page-scroll btn btn-base-color btn-large display-block letter-spacing-2 text-small width-50">more
+                                Information</a>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                           <div class="card">
-                            <div class="card-body">
-                                <img src="{% static 'assets/images/about2.png' %}" alt="ICPT2025"/>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="{% static 'assets/images/about2.png' %}" alt="ICPT2025" />
+                                </div>
                             </div>
-                           </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         </div>
-       
-       
-        
+
+
+
     </section>
-    
+
     <!-- Section - Hotels Start -->
     <section id="accommodation" class="bg-fimage">
         <div class="container">
             <div class="row no-padding-rl no-padding-top padding-8">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">Accommodation</h3>
-                    <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">A variety of hotels are situated within walking distance of the event venue.<br>Here are a few you might be interested in!</p>
+                    <h3
+                        class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
+                        Accommodation</h3>
+                    <p class="font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">A
+                        variety of hotels are situated within walking distance of the event venue.<br>Here are a few you
+                        might be interested in!</p>
                 </div>
-                
+
             </div>
 
             <div class="row" style="margin-bottom: 3rem;">
                 <!-- Features Box Style v3 Start -->
                 <div class="features-box col-sm-12 col-md-12">
-                    <div class="border border-gray-light border-round box-shadow-yes position-relative" data-mh="mh-features-box-v3">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative"
+                        data-mh="mh-features-box-v3">
                         <div class="display-table height-100 no-padding-rl padding-7 width-100">
-                            <span class="bg-base-color border-round display-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-top position-right text-extra-small text-uppercase text-white"><span style="color: #FED800; font-weight: 600;"> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span> Hotel</span>
-                            
+                            <span
+                                class="bg-base-color border-round display-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-top position-right text-extra-small text-uppercase text-white"><span
+                                    style="color: #FED800; font-weight: 600;"> <i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+                                Hotel</span>
+
                             <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
-                                <a href="https://www.marriott.com/en-us/hotels/cnxmc-chiang-mai-marriott-hotel/overview/" target="_blank" class="text-black"><span class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Chiang Mai Marriott Hotel</span></a>
-                                <span class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
+                                <a href="https://www.marriott.com/en-us/hotels/cnxmc-chiang-mai-marriott-hotel/overview/"
+                                    target="_blank" class="text-black"><span
+                                        class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Chiang
+                                        Mai Marriott Hotel</span></a>
+                                <span
+                                    class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="card">
                                             <div class="card-body">
-                                                <img src="{% static 'assets/images/mariothotel.jpg' %}" alt="ICPT2025"/>
+                                                <img src="{% static 'assets/images/mariothotel.jpg' %}"
+                                                    alt="ICPT2025" />
                                             </div>
                                         </div>
                                     </div>
@@ -993,150 +1230,212 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-5 pb-3">
-                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
-                                                      <div class="card">
-                                                        <div class="card-body">
-                                                            <a class="pointer" href="https://maps.app.goo.gl/SST6uijdr7ity9GV8" target="_blank" style="cursor:pointer;">
-                                                                <p>108 Chang Klan Road, Tambol Chang Klan, Amphur Muang, Chiang Mai, Thailand, 50100</p>
-                                                            </a>
-                                                            
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <a class="pointer"
+                                                                    href="https://maps.app.goo.gl/SST6uijdr7ity9GV8"
+                                                                    target="_blank" style="cursor:pointer;">
+                                                                    <p>108 Chang Klan Road, Tambol Chang Klan, Amphur
+                                                                        Muang, Chiang Mai, Thailand, 50100</p>
+                                                                </a>
+
+                                                            </div>
                                                         </div>
-                                                      </div>
                                                     </div>
                                                     <div class="col-md-7 pb-3">
-                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Hotel Info</span>
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Hotel
+                                                            Info</span>
                                                         <div class="card">
-                                                        <div class="card-body">
-                                                            <ul>
-                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Check In: 3:00 pm</li>
-                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Check Out: 12:00 pm</li>
-                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Minimum Age to Check In: 18</li>
-                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Smoke Free Property</li>
-                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Pet Not Allowed (Regrettably pets are not allowed in the hotel)</li>
-                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Parking (Complimentary On-Site Parking)</li>
-                                                                <li> <img src="{% static 'assets/images/icons/dot.svg' %}" alt="ICPT2025" width="20px;"/> Off-Site Parking (Night Bazaar parking Lot 0.1 KM)</li>
-                                                            </ul>
+                                                            <div class="card-body">
+                                                                <ul>
+                                                                    <li> <img
+                                                                            src="{% static 'assets/images/icons/dot.svg' %}"
+                                                                            alt="ICPT2025" width="20px;" /> Check In:
+                                                                        3:00 pm</li>
+                                                                    <li> <img
+                                                                            src="{% static 'assets/images/icons/dot.svg' %}"
+                                                                            alt="ICPT2025" width="20px;" /> Check Out:
+                                                                        12:00 pm</li>
+                                                                    <li> <img
+                                                                            src="{% static 'assets/images/icons/dot.svg' %}"
+                                                                            alt="ICPT2025" width="20px;" /> Minimum Age
+                                                                        to Check In: 18</li>
+                                                                    <li> <img
+                                                                            src="{% static 'assets/images/icons/dot.svg' %}"
+                                                                            alt="ICPT2025" width="20px;" /> Smoke Free
+                                                                        Property</li>
+                                                                    <li> <img
+                                                                            src="{% static 'assets/images/icons/dot.svg' %}"
+                                                                            alt="ICPT2025" width="20px;" /> Pet Not
+                                                                        Allowed (Regrettably pets are not allowed in the
+                                                                        hotel)</li>
+                                                                    <li> <img
+                                                                            src="{% static 'assets/images/icons/dot.svg' %}"
+                                                                            alt="ICPT2025" width="20px;" /> Parking
+                                                                        (Complimentary On-Site Parking)</li>
+                                                                    <li> <img
+                                                                            src="{% static 'assets/images/icons/dot.svg' %}"
+                                                                            alt="ICPT2025" width="20px;" /> Off-Site
+                                                                        Parking (Night Bazaar parking Lot 0.1 KM)</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                      </div>
                                                     </div>
                                                     <div class="col-md-6 pb-3">
-                                                        <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"></span>
-                                                       
+                                                        <span
+                                                            class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"></span>
+
                                                     </div>
                                                     <div class="col-md-6 pb-3">
                                                         <br>
-                                                        <a href="https://www.marriott.com/en-us/hotels/cnxmc-chiang-mai-marriott-hotel/overview/" class="page-scroll btn btn-base-color btn-medium display-block letter-spacing-2 text-small width-100" target="_blank">more Information</a>
+                                                        <a href="https://www.marriott.com/en-us/hotels/cnxmc-chiang-mai-marriott-hotel/overview/"
+                                                            class="page-scroll btn btn-base-color btn-medium display-block letter-spacing-2 text-small width-100"
+                                                            target="_blank">more Information</a>
                                                     </div>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">0.2 mile from venue</span> -->
                             </div>
-                            
+
                         </div>
-                        
-                        
-                       
+
+
+
                     </div>
                     <!-- //.border -->
                 </div>
                 <!-- //Features Box Style v3 End -->
             </div>
-            
-            
+
+
             <div class="row">
                 <!-- Features Box Style v3 Start -->
                 <div class="features-box col-sm-6 col-md-6">
-                    <div class="border border-gray-light border-round box-shadow-yes position-relative" data-mh="mh-features-box-v3">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative"
+                        data-mh="mh-features-box-v3">
                         <div class="display-table height-100 no-padding-rl padding-7 width-100">
                             <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
-                                <a href="https://www.duangtawanhotelchiangmai.com/" target="_blank" class="text-black"><span class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Duangtawan Hotel Chiang Mai</span></a>
-                                <span class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
+                                <a href="https://www.duangtawanhotelchiangmai.com/" target="_blank"
+                                    class="text-black"><span
+                                        class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Duangtawan
+                                        Hotel Chiang Mai</span></a>
+                                <span
+                                    class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
                                 <!-- <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">0.2 mile from venue</span> -->
                                 <div class="card">
                                     <div class="card-body">
-                                        <img src="{% static 'assets/images/duangtawan.jpg' %}" width="100%" alt="ICPT2025"/>
+                                        <img src="{% static 'assets/images/duangtawan.jpg' %}" width="100%"
+                                            alt="ICPT2025" />
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
-                                                <a class="pointer" href="https://maps.app.goo.gl/EsXE8ooYNK8NUMMD7" target="_blank" style="cursor:pointer;">
-                                                    <p>132 Loi Kroh Road, Tambon Chang Khlan, 
+                                                <span
+                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
+                                                <a class="pointer" href="https://maps.app.goo.gl/EsXE8ooYNK8NUMMD7"
+                                                    target="_blank" style="cursor:pointer;">
+                                                    <p>132 Loi Kroh Road, Tambon Chang Khlan,
                                                         Mueang Chiang Mai District, Chiang Mai 50100
-                                                        </p>
+                                                    </p>
                                                 </a>
-                                                
-                                                    <br>
-                                                    <a href="https://www.duangtawanhotelchiangmai.com/" class="page-scroll btn btn-base-color btn-medium display-block letter-spacing-2 text-small width-100">more Information</a>
+
+                                                <br>
+                                                <a href="https://www.duangtawanhotelchiangmai.com/"
+                                                    class="page-scroll btn btn-base-color btn-medium display-block letter-spacing-2 text-small width-100">more
+                                                    Information</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
-                        
-                        <span class="bg-base-color border-round display-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-top position-right text-extra-small text-uppercase text-white"><span style="color: #fff; font-weight: 600;"> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span> Hotel</span>
+
+
+                        <span
+                            class="bg-base-color border-round display-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-top position-right text-extra-small text-uppercase text-white"><span
+                                style="color: #fff; font-weight: 600;"> <i class="fa fa-star" aria-hidden="true"></i><i
+                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+                            Hotel</span>
                     </div>
                     <!-- //.border -->
                 </div>
                 <!-- //Features Box Style v3 End -->
-                
+
                 <!-- Features Box Style v3 Start -->
                 <div class="features-box col-sm-6 col-md-6 xs-margin-3 xs-no-margin-bottom xs-no-margin-rl">
-                    <div class="border border-gray-light border-round box-shadow-yes position-relative" data-mh="mh-features-box-v3">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative"
+                        data-mh="mh-features-box-v3">
                         <div class="display-table height-100 no-padding-rl padding-7 width-100">
                             <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
-                                <a href="https://movenpick.accor.com/th/asia/thailand/chiang-mai/movenpick-suriwongse-hotel-chiang-mai.html" target="_blank" class="text-black"><span class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Movenpick Suriwongse Chiang Mai</span></a>
-                                <span class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
+                                <a href="https://movenpick.accor.com/th/asia/thailand/chiang-mai/movenpick-suriwongse-hotel-chiang-mai.html"
+                                    target="_blank" class="text-black"><span
+                                        class="display-block font-family-alt font-weight-700 letter-spacing-1 text-large text-uppercase">Movenpick
+                                        Suriwongse Chiang Mai</span></a>
+                                <span
+                                    class="bg-base-color display-inline-block margin-3 no-margin-bottom no-margin-rl separator-line-thick"></span>
                                 <!-- <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">0.2 mile from venue</span> -->
                                 <div class="card">
                                     <div class="card-body">
 
-                                        
+
                                         <div class="row">
                                             <div class="col-md-12 text-center">
-                                                <img src="{% static 'assets/images/moverick.jpg' %}" width="70%"  alt="ICPT2025"/>
+                                                <img src="{% static 'assets/images/moverick.jpg' %}" width="70%"
+                                                    alt="ICPT2025" />
                                             </div>
                                             <div class="col-md-12">
-                                                <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
-                                                <a class="pointer" href="https://maps.app.goo.gl/aHRnDurc7et1q3Bu5" target="_blank" style="cursor:pointer;">
-                                                    <p>110 chang khlan Rd, Tambon Chang Khlan, Mueang Chiang Mai District, Chiang Mai 50100
+                                                <span
+                                                    class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">Location</span>
+                                                <a class="pointer" href="https://maps.app.goo.gl/aHRnDurc7et1q3Bu5"
+                                                    target="_blank" style="cursor:pointer;">
+                                                    <p>110 chang khlan Rd, Tambon Chang Khlan, Mueang Chiang Mai
+                                                        District, Chiang Mai 50100
 
                                                     </p>
                                                 </a>
-                                                    <br>
-                                                    <a href="https://movenpick.accor.com/th/asia/thailand/chiang-mai/movenpick-suriwongse-hotel-chiang-mai.html" class="page-scroll btn btn-base-color btn-medium display-block letter-spacing-2 text-small width-100">more Information</a>
+                                                <br>
+                                                <a href="https://movenpick.accor.com/th/asia/thailand/chiang-mai/movenpick-suriwongse-hotel-chiang-mai.html"
+                                                    class="page-scroll btn btn-base-color btn-medium display-block letter-spacing-2 text-small width-100">more
+                                                    Information</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                         
+
+
                         </div>
-                        
-                       
-                        <span class="bg-base-color border-round display-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-top position-right text-extra-small text-uppercase text-white"><span style="color: #fff; font-weight: 600;"> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span> Hotel</span>
-                     
+
+
+                        <span
+                            class="bg-base-color border-round display-block font-family-alt letter-spacing-1 margin-4 padding-tb-9px padding-rl-13px position-absolute position-top position-right text-extra-small text-uppercase text-white"><span
+                                style="color: #fff; font-weight: 600;"> <i class="fa fa-star" aria-hidden="true"></i><i
+                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+                            Hotel</span>
+
                     </div>
                     <!-- //.border -->
                 </div>
                 <!-- //Features Box Style v3 End -->
 
             </div>
-            
+
         </div>
-        
+
     </section>
     <!-- //Section - Hotels End -->
-    
-    
-    
+
+
+
     <!-- Section - Gallery Start -->
     <!-- <section id="gallery" class="bg-white-3">
         <div class="container">
@@ -1268,9 +1567,9 @@
  
     </section> -->
     <!-- //Section - Gallery End -->
-    
-    
-    
+
+
+
     <!-- Section - Abstract -->
     <!-- <section id="abstract" class="bg-white">
         <div class="container">
@@ -1591,9 +1890,9 @@
 
     </section> -->
     <!-- //Section -->
-    
-    
-    
+
+
+
     <!-- Section - Ticket Start -->
     <!-- <section id="ticket" class="bg-white-3">
         <div class="container">
@@ -1682,9 +1981,9 @@
   
     </section> -->
     <!-- //Section - Ticket End -->
-    
-    
-    
+
+
+
     <!-- Section - Sponsors Start -->
     <!-- <section id="sponsors" class="bg-white">
         <div class="container">
@@ -1739,29 +2038,33 @@
         
     </section> -->
     <!-- //Section - Sponsors End -->
-    
-    
-    
- 
+
+
+
+
     <!-- Section - Register Start -->
     <section id="register" class="bg-cover bg-overlay-black-6">
         <div class="container">
             <div class="row">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <img src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt="ICPT2025" style="width: 20rem;"/>
+                        <img src="{% static 'assets/images/Logo/icptnewLogo.svg' %}" alt="ICPT2025"
+                            style="width: 20rem;" />
                         <!-- <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 text-uppercase text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
                             The Annual<br>
                             Conference!
                         </h2> -->
 
-                        <p class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-gray-light-2 xs-text-large text-extra-large text-uppercase" style="font-weight: 600;">
+                        <p class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-gray-light-2 xs-text-large text-extra-large text-uppercase"
+                            style="font-weight: 600;">
                             14th International Conference on Road
                             <br>and Airfield Pavement Technology 2025
                             <br>16 - 18 July 2025
                             <br>Chiang Mai Merriott Hotel
                         </p>
-                        <a href="#page-top" class="page-scroll btn btn-base-color sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl" style="color: #eaaf51;">16 - 18 JULY 2025 CHIANG MAI MERRIOTT HOTEL</a>
+                        <a href="#page-top"
+                            class="page-scroll btn btn-base-color sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl"
+                            style="color: #eaaf51;">16 - 18 JULY 2025 CHIANG MAI MERRIOTT HOTEL</a>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
@@ -1771,7 +2074,7 @@
                     <span class="bg-base-color display-inline-block margin-5-5 no-margin-rl separator-line-medium-thick-long"></span>
                 </div> -->
                 <!-- //.col-sm-6 -->
-                
+
                 <!-- <div class="col-sm-6 col-md-5">
                     <div class="form-wrapper border-round padding-8">
                         <form action="contact/send_mail_ticket.php" method="post" id="form-register">
@@ -1793,81 +2096,83 @@
                     </div>
               
                 </div> -->
-             
+
             </div>
-          
+
         </div>
- 
+
     </section>
     <!-- //Section - Register End -->
 
-  <!-- Site footer -->
-  <footer id="contact" class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-4 text-center">
-          <!-- <h6>ICPT2025</h6> -->
-          <img src="{% static 'assets/images/Logo/footerimage.svg' %}" alt="ICPT2025" style="width: 55rem;"/>
-          
-          <!-- <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p> -->
-        </div>
-        <div class="col-md-1" style="margin-left: 5rem;">
-            <div class="vl"></div>
-        </div>
-       
+    <!-- Site footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 text-center">
+                    <!-- <h6>ICPT2025</h6> -->
+                    <img src="{% static 'assets/images/Logo/footerimage.svg' %}" alt="ICPT2025" style="width: 55rem;" />
 
-        <div class="col-xs-12 col-md-6">
-            <h6>Chiang Mai University</h6>
-            <h6>Advanced Railway Civil and Foundation Engineering Center</h6>
-          <ul class="footer-links">
-           
-            <li>Email: icpt-2025@cmu.ac.th</li>
-            <!-- <li>Phone: +029 999 9999</li> -->
-            <li>Give us a call or drop by anytime,
-                we endeavour to answer all enquiries
-                within 24 hours on business days.</li>
-            <li>We are open from 8.30 AM - 4.00 PM week days.</li>
-            <li>Organized by Chingmai University.</li>
-          </ul>
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12 text-strt">
-                <ul class="social-icons">
-                  <li><a class="cmu" href="https://www.cmu.ac.th/"><img src="{% static 'assets/images/Logo/Chiang_Mai_University.svg.png' %}" alt="ICPT2025"/></a></li>
-                  <!-- <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <!-- <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p> -->
+                </div>
+                <div class="col-md-1" style="margin-left: 5rem;">
+                    <div class="vl"></div>
+                </div>
+
+
+                <div class="col-xs-12 col-md-6">
+                    <h6>Chiang Mai University</h6>
+                    <h6>Advanced Railway Civil and Foundation Engineering Center</h6>
+                    <ul class="footer-links">
+
+                        <li>Email: icpt-2025@cmu.ac.th</li>
+                        <!-- <li>Phone: +029 999 9999</li> -->
+                        <li>Give us a call or drop by anytime,
+                            we endeavour to answer all enquiries
+                            within 24 hours on business days.</li>
+                        <li>We are open from 8.30 AM - 4.00 PM week days.</li>
+                        <li>Organized by Chingmai University.</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-strt">
+                            <ul class="social-icons">
+                                <li><a class="cmu" href="https://www.cmu.ac.th/"><img
+                                            src="{% static 'assets/images/Logo/Chiang_Mai_University.svg.png' %}"
+                                            alt="ICPT2025" /></a></li>
+                                <!-- <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
                   <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
                   <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>    -->
-                </ul>
-              </div>
-          </div>
-          
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; All Rights Reserved by 
-            2025 ICPT Conference.
-          </p>
-        </div>
+                            </ul>
+                        </div>
+                    </div>
 
-     
-      </div>
-    </div>
-</footer>
-    
-    
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; All Rights Reserved by
+                        2025 ICPT Conference.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
     <!-- Scroll to top -->
     <a href="#page-top" class="page-scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
-    
-    
+
+
     <!-- Loading jQuery -->
     <script src="{% static 'assets/js/jquery.min.js' %}"></script>
-    
+
     <!-- Loading Bootstrap JS -->
     <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-    
+
     <!-- Include all js plugins (below) -->
     <script src="{% static 'assets/js/pace.min.js' %}"></script>
     <script src="{% static 'assets/js/debouncer.min.js' %}"></script>
@@ -1880,14 +2185,15 @@
     <script src="{% static 'assets/js/jquery.countTo.js' %}"></script>
     <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
-    
+
     <!-- BG Parallax JS -->
     <script src="{% static 'assets/js/lib/greensock/TweenMax.min.js' %}"></script>
     <script src="{% static 'assets/js/ScrollMagic.min.js' %}"></script>
     <script src="{% static 'assets/js/animation.gsap.min.js' %}"></script>
-    
+
     <!-- Loading Theme JS -->
     <script src="{% static 'assets/js/main.js' %}"></script>
-    
+
 </body>
+
 </html>
