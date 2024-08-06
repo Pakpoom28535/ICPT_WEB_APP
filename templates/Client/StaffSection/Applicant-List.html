@@ -99,6 +99,7 @@
                 <tr>
                   <th>CodeID</th>
                   <th>Name</th>
+                  <th>Date Register</th>
                   <th>Register Type</th>
                   <th>Abstract</th>
                   <th>Full Paper</th>
@@ -112,6 +113,7 @@
               <tfoot>
                 <tr>
                   <th>Name</th>
+                  <th>Date Register</th>
                   <th>Register Type</th>
                   <th>Abstract</th>
                   <th>Full Paper</th>
@@ -126,7 +128,10 @@
                 {% for user_id, data in user_reviews.items %}
                 <tr class="text-center">
                   <td>{{ data.userinfo.userprofile.codeno }} </td>
+                  
                   <td>{{ data.userinfo.first_name }} {{ data.userinfo.last_name }}</td>
+                  <td>{{ data.userinfo.userprofile.user.date_joined}}</td>
+
                   <td>{{ data.userinfo.userprofile.User_type }}</td>
                   <td>
                     {% if data.review.0.Review_status %}
@@ -475,7 +480,9 @@
  
   $(document).ready(function () {
 
-    $('#T1').DataTable();
+    $('#T1').DataTable({
+        "order": [[2, "desc"]] // Order by the second column (index 1) in descending order
+    });
 
     $('#myModal').on('hidden.bs.modal', function () {
       if(change == 1){
