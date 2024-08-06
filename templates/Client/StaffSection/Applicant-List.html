@@ -130,7 +130,7 @@
                   <td>{{ data.userinfo.userprofile.codeno }} </td>
                   
                   <td>{{ data.userinfo.first_name }} {{ data.userinfo.last_name }}</td>
-                  <td>{{ data.userinfo.userprofile.user.date_joined}}</td>
+                  <td><span style="display:none;">{{ data.userinfo.userprofile.user.date_joined|date:"U" }}</span>{{ data.userinfo.userprofile.user.date_joined}}</td>
 
                   <td>{{ data.userinfo.userprofile.User_type }}</td>
                   <td>
@@ -481,7 +481,7 @@
   $(document).ready(function () {
 
     $('#T1').DataTable({
-        "order": [[2, "desc"]] // Order by the second column (index 1) in descending order
+        "order": [[2,'desc']] // Order by the second column (index 1) in descending order
     });
 
     $('#myModal').on('hidden.bs.modal', function () {
