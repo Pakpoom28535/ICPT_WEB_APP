@@ -1,0 +1,10 @@
+# Ignore the __pycache__ folder
+__pycache__/
+
+# Optionally, if you want to ignore all Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+
+# Optionally, to ignore all compiled Python files within directories
+**/__pycache__/
