@@ -1,0 +1,88 @@
+{% extends "Client/base-clean.html" %}
+{% block content %}
+{% load static %}
+
+
+<section id="about" class="bg-white-2">
+    <div class="limiter">
+		<div class="container-login100">
+     
+                <div class="card" style="padding: 3rem;">
+                    <div class="card-header">
+                        <img  src="{% static 'assets/images/Abstract banner.png'%}" style="width: 100%;"  alt="IMG" >
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 text-center mb-4">
+                                <h4 style="font-weight: 700; color: #5f141a;">ICPT 2025 Abstract Guidelines</h4>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <p style="font-weight: 700; color: #5f141a;">Content</p>
+                                <ul>
+                                    <li><span style="font-weight: 700;">●	Language:</span> English</li>
+                                    <li><span style="font-weight: 700;">●	Length:</span> 150 no more than 250 words</li>
+                                    <li><span style="font-weight: 700;">●	Visuals:</span> May include ONE photograph, graph, or diagram (no tables)</li>
+                                    <li><span style="font-weight: 700;">●	Structure:</span>
+                                        <ul>
+                                            <li>○	State the purpose of your research</li>
+                                            <li>○	Highlight the main findings</li>
+                                            <li>○	Summarize key conclusions</li>
+                                            <li>○	Include up to 5 keywords</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <p style="font-weight: 700; color: #5f141a;">Submission</p>
+                                <ul>
+                                    <li><span style="font-weight: 700;">1.	Template:</span> Download the provided template (<a href="/static/document/Abstract_template.docx"><span style="color: #16af58;">ICPT2025 Template.</span></a>)</li>
+                                    <li><span style="font-weight: 700;">2.	Registration:</span> Create an account on the conference website (<a href="/signin"><span style="color: #1714d3;">Register Now!</span></a>)</li>
+                                    <li><span style="font-weight: 700;">3.	EasyChair Submission:</span>
+                                        <ul>
+                                            <li>○	Log in or create an EasyChair account (<a href="https://easychair.org/account2/signin" target="_blank"><span style="color: #1714d3;">EasyChair Login.</span></a>)</li>
+                                            <li>○	Fill in author details, title, abstract, and keywords</li>
+                                            <li>○	Upload your abstract file (Only doc.x, PDF)</li>
+                                            <li>○	Review and submit</li>
+                                            <li style="color: #5f141a; font-weight: 700;">*   You may walk through the steps on EasyChair by following the link :  <a href="https://app.tango.us/app/workflow/Guide-to-Register-and-Submit-Abstract-for-ICPT2025-6b345748962d4fb0be5e9313f7f73e42" target="_blank"><span style="color: #1714d3;">EasyChair Guidelines.</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <p style="font-weight: 700; color: #5f141a;">Post-Submission</p>
+                                <ul>
+                                    <li>●	Track your submission status through your conference account (<a href="/signin"><span style="color:#1714d3;">Login Now!</span></a>)</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <p style="font-weight: 700; color: #5f141a;">Timeline</p>
+                                <ul>
+                                    <li>Please note that specific deadlines are not provided in the reference text, so this timeline offers a general sequence of events</li>
+                                    <li><ul>
+                                        <li><span style="font-weight: 700;">●	Abstract Submission Opens:</span> 1 August 2024</li>
+                                        <li><span style="font-weight: 700;">●	Abstract Submission Deadline:</span> 1 December 2024</li>
+                                        <li><span style="font-weight: 700;">●	Notification of Acceptance:</span> 15 December 2024</li>
+                                        <li><span style="font-weight: 700;">●	Early Registration Deadline:</span> <span style="color: red;">TBA</span></li>
+                                        <li><span style="font-weight: 700;">●	Conference Dates:</span> 16 – 18 July 2025</li>
+                                    </ul></li>
+                                
+                                </ul>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div class="d-grid gap-2 col-4 mx-auto">
+                                    <a class="btn" href="/signin" style="background-color: #5f141a; color: #fff;" type="button">Register Now! or Login!</a>
+                                   
+                                  </div>
+                                <!-- <a href="/signin" target="_blank" class="btn btn-success">Register Now!</a> -->
+                            </div>
+                            </div>
+                    </div>
+                </div>
+          
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content%}

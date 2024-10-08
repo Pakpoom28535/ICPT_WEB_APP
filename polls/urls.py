@@ -44,4 +44,6 @@ urlpatterns = [
         path('Visitor-List', views.VisitorList, name='Visitor-List'),
         path('Register-Type', views.RegisterType, name='Register-Type'),
          path('email', views.sendmail, name='email'),
+         path('guideline', views.guideline, name='guideline'),
+         path('accomodation', views.accomodation, name='accomodation'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

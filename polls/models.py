@@ -38,6 +38,7 @@ class UserProfile(models.Model):
     codeno = models.CharField(max_length=255, null=True, blank=True)
     bdate = models.DateField(null=True, blank=True)
     paymet_status = models.BooleanField(null=True,default=False)
+    student_info = models.FileField(upload_to='Review_file/',null=True)  # Adjust the upload_to parameter as needed
 class StateReview(models.Model):
     StateReview_id =  models.AutoField(primary_key=True)
     StateReview_name = models.CharField(max_length=255)

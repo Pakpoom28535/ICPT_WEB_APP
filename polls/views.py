@@ -162,7 +162,12 @@ def HotelReservation(request):
     return render(request, "Client/ApplicantSection/Hotel/Hotel-Reservation.html")
 def StaffLogin(request):
     return render(request, "Client/StaffSection/Staff-Login.html")
+def guideline(request):
+    return render(request, "Client/Guideline.html")
+def accomodation(request):
+    return render(request, "Client/Accomodation.html")
 def StaffDashboard(request):
+    
 
             
     if request.user.is_authenticated:
@@ -273,11 +278,10 @@ def RegisterType(request):
 def Register(request):
     if request.method == 'POST':
         print(request.POST)
-
+        print(request.FILES)
         first_name = request.POST.get('first_name')
         last_name = request.POST.get('last_name')
         email = request.POST.get('email')
-       
         username = email
         password = generate_password()
         user = User.objects.filter(username=username)
@@ -295,6 +299,8 @@ def Register(request):
         country = request.POST.get('country')
         state_province = request.POST.get('state_province')
         zip_postal_code = request.POST.get('zip_postal_code')
+        
+
         print(group)
         if user.exists():
         
@@ -314,21 +320,42 @@ def Register(request):
         user.save()
         code = generate_random_code()
         #create userprofile
-        user_profile = UserProfile(
-            user=user,
-            codeno= code,
-            User_type=group,
-            title=title,
-            phone=phone,
-            fax=fax,
-            research_field=research_field,
-            institution=institution,
-            address=address,
-            city=city,
-            country=country,
-            state_province=state_province,
-            zip_postal_code=zip_postal_code
-        )
+        print(request.POST.get('User_type'))
+        if request.POST.get('User_type') == '2':
+                file = request.FILES.get('file')
+                user_profile = UserProfile(
+                user=user,
+                codeno= code,
+                User_type=group,
+                title=title,
+                phone=phone,
+                fax=fax,
+                research_field=research_field,
+                institution=institution,
+                address=address,
+                city=city,
+                country=country,
+                state_province=state_province,
+                zip_postal_code=zip_postal_code,
+                student_info = file
+            )
+        else:
+            user_profile = UserProfile(
+                user=user,
+                codeno= code,
+                User_type=group,
+                title=title,
+                phone=phone,
+                fax=fax,
+                research_field=research_field,
+                institution=institution,
+                address=address,
+                city=city,
+                country=country,
+                state_province=state_province,
+                zip_postal_code=zip_postal_code
+            )
+
         user_profile.save()
         all_review_step = StateReview.objects.all()
         for i in all_review_step:

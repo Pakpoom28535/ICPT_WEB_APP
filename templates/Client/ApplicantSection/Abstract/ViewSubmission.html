@@ -7,46 +7,12 @@
     <div class="card card-round">
       <div class="card-header" style="background-color: #65131a;">
         <div class="card-head-row card-tools-still-right">
-          <div class="card-title" style="color: #fff;"><i class="fas fa-tasks"></i> View Submission</div>
+          <div class="card-title" style="color: #fff;"><i class="fas fa-tasks"></i>Submission Progress</div>
 
         </div>
       </div>
       <div class="card-body p-0">
-        <div class="container">
-          <div class="row ms-progressbar" style="border-bottom:0;">
-        
-            <div class="col-4 ms-progressbar-step complete">
-              <div class="text-center ms-progressbar-step-number">Instruction</div>
-              <div class="progress">
-                <div class="progress-bar"></div>
-              </div>
-              <a href="#" class="ms-progressbar-dot"></a>
-              
-            </div>
-        
-            <div class="col-4 ms-progressbar-step complete">
-              <!-- complete -->
-              <div class="text-center ms-progressbar-step-number">Create Abstract</div>
-              <div class="progress">
-                <div class="progress-bar"></div>
-              </div>
-              <a href="#" class="ms-progressbar-dot"></a>
-              
-            </div>
-        
-            <div class="col-4 ms-progressbar-step complete">
-              <!-- complete -->
-              <div class="text-center ms-progressbar-step-number">Abstract Review</div>
-              <div class="progress">
-                <div class="progress-bar"></div>
-              </div>
-              <a href="#" class="ms-progressbar-dot"></a>
-             
-            </div>
-        
-         
-          </div>    
-        </div>
+     
         <div class="table-responsive  p-2">
           <!-- Projects table -->
           <table class="table table-striped"  id="T1">
@@ -55,9 +21,9 @@
                 <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Submission ID</th>
                 <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Title</th>
                 <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Date / Time Submitted</th>
-                <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">File</th>
-                <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Dicision Status</th>
-                <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Result</th>
+                <!-- <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Name</th> -->
+                <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Status</th>
+                <!-- <th style="background-color: #65131a; color: #fff; font-weight: 700;" scope="col">Result</th> -->
               </tr>
             </thead>
             <tbody>
@@ -66,16 +32,19 @@
                 <td>{{ i.Submission_Code }}</td> <!-- Adjust to match your ID field -->
                 <td> {{i.Submition_title}}</td> <!-- Example title field -->
                 <td>{{ i.created_at }}</td> <!-- Adjust to match your date field -->
-                <td><a href="/media/{{i.file}}" class="btn btn-success" download>Download</a></td>
-                <td>{{ i.comment }}</td> <!-- Adjust to match your status field -->
-
+                <!-- <td>{{ i.Submition_title }}</td> -->
                 <td class="text-center">
+                  <!-- status -->
                   {% if i.status_review == True %}
-                  <span class="badge badge-success">Accept</span>
+                  <span class="badge badge-warning">Submited</span>
                   {% elif i.status_review == False %}
-                  <span class="badge badge-danger">Reject</span>
+                  <span class="badge badge-info">Under Review</span>
+                  {% elif i.status_review == False %}
+                  <span class="badge badge-primary">Tentatively accepted</span>
+                  {% elif i.status_review == False %}
+                  <span class="badge badge-success">Revision requested</span>
                   {% elif i.status_review == None %}
-                  <span class="badge badge-warning">Waiting Review</span>
+                  <span class="badge badge-danger">Rejected</span>
                   {% endif %}
 
                 </td>
@@ -89,14 +58,7 @@
 
     
   </div>
-  <div class="col-md-12 mt-2 mb-4">
-    <div class="card card-round">
-      <div class="card-body">
-        <p>After your draft proposal has been approved, you must complete the remaining documentation through the EasyShare system.</p>
-        <p>Follow Easyshare Link >>> <a href="https://easychair.org/my/conference?conf=14thicpt" target="_blank">Easyshare</a></p>
-      </div>
-    </div>
-  </div>
+
 </div>
 <script>
   $(document).ready(function () {
